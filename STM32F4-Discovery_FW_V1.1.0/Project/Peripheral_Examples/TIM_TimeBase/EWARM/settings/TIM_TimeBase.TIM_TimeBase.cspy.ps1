@@ -23,9 +23,9 @@ param([String]$debugfile = "");
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "D:\Fichier Mathieu\Session 6\Design 3\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\settings\TIM_TimeBase.TIM_TimeBase.general.xcl" --backend -f "D:\Fichier Mathieu\Session 6\Design 3\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\settings\TIM_TimeBase.TIM_TimeBase.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "D:\Fichier Mathieu\Session 6\Design 3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\settings\TIM_TimeBase.TIM_TimeBase.general.xcl" --backend -f "D:\Fichier Mathieu\Session 6\Design 3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\settings\TIM_TimeBase.TIM_TimeBase.driver.xcl" 
 }
 else
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "D:\Fichier Mathieu\Session 6\Design 3\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\settings\TIM_TimeBase.TIM_TimeBase.general.xcl" --debug_file=$debugfile --backend -f "D:\Fichier Mathieu\Session 6\Design 3\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\settings\TIM_TimeBase.TIM_TimeBase.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "D:\Fichier Mathieu\Session 6\Design 3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\settings\TIM_TimeBase.TIM_TimeBase.general.xcl" --debug_file=$debugfile --backend -f "D:\Fichier Mathieu\Session 6\Design 3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\settings\TIM_TimeBase.TIM_TimeBase.driver.xcl" 
 }
