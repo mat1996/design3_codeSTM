@@ -1,0 +1,275 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V8.11.2.13589/W32 for ARM       13/Sep/2017  13:23:10
+# Copyright 1999-2017 IAR Systems AB.
+#
+#    Cpu mode     =  thumb
+#    Endian       =  little
+#    Source file  =  
+#        C:\Users\mathieu\Documents\Session
+#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\IO_Toggle\main.c
+#    Command line =  
+#        -f C:\Users\mathieu\AppData\Local\Temp\EW450.tmp
+#        ("C:\Users\mathieu\Documents\Session
+#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\IO_Toggle\main.c"
+#        -D USE_STDPERIPH_DRIVER -D STM32F4XX -lCN
+#        "C:\Users\mathieu\Documents\Session
+#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\IO_Toggle\EWARM\IO_Toggle\List"
+#        -o "C:\Users\mathieu\Documents\Session
+#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\IO_Toggle\EWARM\IO_Toggle\Obj"
+#        --debug --endian=little --cpu=Cortex-M4 -e --fpu=None --dlib_config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.0\arm\INC\c\DLib_Config_Normal.h" -I
+#        "C:\Users\mathieu\Documents\Session
+#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\IO_Toggle\EWARM\..\"
+#        -I "C:\Users\mathieu\Documents\Session
+#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\IO_Toggle\EWARM\..\..\..\..\Libraries\CMSIS\Include\"
+#        -I "C:\Users\mathieu\Documents\Session
+#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\IO_Toggle\EWARM\..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include\"
+#        -I "C:\Users\mathieu\Documents\Session
+#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\IO_Toggle\EWARM\..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\"
+#        -I "C:\Users\mathieu\Documents\Session
+#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\IO_Toggle\EWARM\..\..\..\..\Utilities\STM32F4-Discovery\"
+#        -Ohz --use_c++_inline -I "C:\Program Files (x86)\IAR Systems\Embedded
+#        Workbench 8.0\arm\CMSIS\Include\")
+#    Locale       =  C
+#    List file    =  
+#        C:\Users\mathieu\Documents\Session
+#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\IO_Toggle\EWARM\IO_Toggle\List\main.lst
+#    Object file  =  
+#        C:\Users\mathieu\Documents\Session
+#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\IO_Toggle\EWARM\IO_Toggle\Obj\main.o
+#
+###############################################################################
+
+C:\Users\mathieu\Documents\Session 5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\IO_Toggle\main.c
+      1          //version du laboratoire 1 cours SMI
+      2          //Mathieu Gagnon
+      3          
+      4          
+      5          /* Includes ------------------------------------------------------------------*/
+      6          #include "stm32f4_discovery.h"
+      7          
+      8          /** @addtogroup STM32F4_Discovery_Peripheral_Examples
+      9            * @{
+     10            */
+     11          
+     12          /** @addtogroup IO_Toggle
+     13            * @{
+     14            */ 
+     15          
+     16          /* Private typedef -----------------------------------------------------------*/
+
+   \                                 In section .bss, align 4
+     17          GPIO_InitTypeDef  GPIO_InitStructure;
+   \                     GPIO_InitStructure:
+   \   00000000                      DS8 8
+     18          GPIO_InitTypeDef user_button;
+   \                     user_button:
+   \   00000008                      DS8 8
+     19          
+     20          /* Private define ------------------------------------------------------------*/
+     21          /* Private macro -------------------------------------------------------------*/
+     22          /* Private variables ---------------------------------------------------------*/
+     23          /* Private function prototypes -----------------------------------------------*/
+     24          void Delay(__IO uint32_t nCount);
+     25          /* Private functions ---------------------------------------------------------*/
+     26          
+     27          /**
+     28            * @brief  Main program
+     29            * @param  None
+     30            * @retval None
+     31            */
+
+   \                                 In section .text, align 2, keep-with-next
+     32          int main(void)
+     33          {
+   \                     main: (+1)
+   \   00000000   0xB570             PUSH     {R4-R6,LR}
+     34          
+     35            /* GPIOD Periph clock enable */
+     36            RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOD, ENABLE);
+   \   00000002   0x2101             MOVS     R1,#+1
+   \   00000004   0x2008             MOVS     R0,#+8
+   \   00000006   0x.... 0x....      BL       RCC_AHB1PeriphClockCmd
+     37          
+     38            /* Configure PD12, PD13, PD14 and PD15 in output pushpull mode */
+     39            GPIO_InitStructure.GPIO_Pin = GPIO_Pin_12 | GPIO_Pin_13| GPIO_Pin_14| GPIO_Pin_15;
+     40            GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+   \   0000000A   0x2001             MOVS     R0,#+1
+   \   0000000C   0x....             LDR.N    R4,??DataTable0
+     41            GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+     42            GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;
+     43            GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
+     44            GPIO_Init(GPIOD, &GPIO_InitStructure);
+   \   0000000E   0x....             LDR.N    R5,??DataTable0_1  ;; 0x40020c00
+   \   00000010   0x....             LDR.N    R6,??DataTable0_2  ;; 0x40020000
+   \   00000012   0x7120             STRB     R0,[R4, #+4]
+   \   00000014   0xF44F 0x4170      MOV      R1,#+61440
+   \   00000018   0x2000             MOVS     R0,#+0
+   \   0000001A   0x71A0             STRB     R0,[R4, #+6]
+   \   0000001C   0x6021             STR      R1,[R4, #+0]
+   \   0000001E   0x2003             MOVS     R0,#+3
+   \   00000020   0x7160             STRB     R0,[R4, #+5]
+   \   00000022   0x4621             MOV      R1,R4
+   \   00000024   0x2000             MOVS     R0,#+0
+   \   00000026   0x71E0             STRB     R0,[R4, #+7]
+   \   00000028   0x4628             MOV      R0,R5
+   \   0000002A   0x.... 0x....      BL       GPIO_Init
+     45          
+     46            //activer le controleur de périphérique D (CLK)
+     47            RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
+   \   0000002E   0x2101             MOVS     R1,#+1
+   \   00000030   0x2001             MOVS     R0,#+1
+   \   00000032   0x.... 0x....      BL       RCC_AHB1PeriphClockCmd
+     48            
+     49            //configurer le bouton le GPIO du bouton bleu
+     50            user_button.GPIO_Pin = GPIO_Pin_0;
+   \   00000036   0x2001             MOVS     R0,#+1
+   \   00000038   0x60A0             STR      R0,[R4, #+8]
+     51            user_button.GPIO_Mode = GPIO_Mode_IN;
+     52            user_button.GPIO_OType = GPIO_OType_PP;
+     53            user_button.GPIO_PuPd = GPIO_PuPd_DOWN;
+     54            user_button.GPIO_Speed = GPIO_Speed_100MHz;
+     55            
+     56            //vérifer le # du controleur de périphérique
+     57            GPIO_Init(GPIOA, &user_button);
+   \   0000003A   0xF104 0x0108      ADD      R1,R4,#+8
+   \   0000003E   0x2000             MOVS     R0,#+0
+   \   00000040   0x7320             STRB     R0,[R4, #+12]
+   \   00000042   0x73A0             STRB     R0,[R4, #+14]
+   \   00000044   0x2002             MOVS     R0,#+2
+   \   00000046   0x73E0             STRB     R0,[R4, #+15]
+   \   00000048   0x2003             MOVS     R0,#+3
+   \   0000004A   0x7360             STRB     R0,[R4, #+13]
+   \   0000004C   0x4630             MOV      R0,R6
+   \   0000004E   0x.... 0x....      BL       GPIO_Init
+   \   00000052   0xE001             B.N      ??main_0
+     58            
+     59            while (1)
+     60            {
+     61              //lire la valeur du boutton bleu, allumer ou éteindre LED en fonction du bouton
+     62              if(GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0))
+     63              {
+     64                GPIO_SetBits(GPIOD, GPIO_Pin_12 | GPIO_Pin_13 | GPIO_Pin_14 | GPIO_Pin_15);
+   \                     ??main_1: (+1)
+   \   00000054   0x.... 0x....      BL       GPIO_SetBits
+     65              }
+   \                     ??main_0: (+1)
+   \   00000058   0x2101             MOVS     R1,#+1
+   \   0000005A   0x4630             MOV      R0,R6
+   \   0000005C   0x.... 0x....      BL       GPIO_ReadInputDataBit
+   \   00000060   0x2800             CMP      R0,#+0
+   \   00000062   0xF44F 0x4170      MOV      R1,#+61440
+   \   00000066   0x4628             MOV      R0,R5
+   \   00000068   0xD1F4             BNE.N    ??main_1
+     66              else
+     67              {
+     68                 GPIO_ResetBits(GPIOD, GPIO_Pin_12|GPIO_Pin_13|GPIO_Pin_14|GPIO_Pin_15);
+   \   0000006A   0x.... 0x....      BL       GPIO_ResetBits
+   \   0000006E   0xE7F3             B.N      ??main_0
+     69              }
+     70            }
+     71          }
+     72          
+     73          /**
+     74            * @brief  Delay Function.
+     75            * @param  nCount:specifies the Delay time length.
+     76            * @retval None
+     77            */
+
+   \                                 In section .text, align 2, keep-with-next
+     78          void Delay(__IO uint32_t nCount)
+     79          {
+   \                     Delay: (+1)
+   \   00000000   0xB401             PUSH     {R0}
+     80            while(nCount--)
+   \                     ??Delay_0: (+1)
+   \   00000002   0x9800             LDR      R0,[SP, #+0]
+   \   00000004   0x1E41             SUBS     R1,R0,#+1
+   \   00000006   0x2800             CMP      R0,#+0
+   \   00000008   0x9100             STR      R1,[SP, #+0]
+   \   0000000A   0xD1FA             BNE.N    ??Delay_0
+     81            {
+     82            }
+     83          }
+   \   0000000C   0xB001             ADD      SP,SP,#+4
+   \   0000000E   0x4770             BX       LR               ;; return
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0:
+   \   00000000   0x........         DC32     GPIO_InitStructure
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_1:
+   \   00000000   0x40020C00         DC32     0x40020c00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0_2:
+   \   00000000   0x40020000         DC32     0x40020000
+     84          
+     85          #ifdef  USE_FULL_ASSERT
+     86          
+     87          /**
+     88            * @brief  Reports the name of the source file and the source line number
+     89            *         where the assert_param error has occurred.
+     90            * @param  file: pointer to the source file name
+     91            * @param  line: assert_param error line source number
+     92            * @retval None
+     93            */
+     94          void assert_failed(uint8_t* file, uint32_t line)
+     95          { 
+     96            /* User can add his own implementation to report the file name and line number,
+     97               ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
+     98          
+     99            /* Infinite loop */
+    100            while (1)
+    101            {
+    102            }
+    103          }
+    104          #endif
+    105          
+    106          /**
+    107            * @}
+    108            */ 
+    109          
+    110          /**
+    111            * @}
+    112            */ 
+    113          
+    114          /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       4   Delay
+      16   main
+        16   -> GPIO_Init
+        16   -> GPIO_ReadInputDataBit
+        16   -> GPIO_ResetBits
+        16   -> GPIO_SetBits
+        16   -> RCC_AHB1PeriphClockCmd
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable0
+       4  ??DataTable0_1
+       4  ??DataTable0_2
+      16  Delay
+      16  GPIO_InitStructure
+          user_button
+     112  main
+
+ 
+  16 bytes in section .bss
+ 140 bytes in section .text
+ 
+ 140 bytes of CODE memory
+  16 bytes of DATA memory
+
+Errors: none
+Warnings: none
