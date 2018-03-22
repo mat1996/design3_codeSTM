@@ -285,6 +285,17 @@ void TIM5_IRQHandler(void)
         setConsigneVitesseAngulaire(2, actionVitesseAngulaire, getDirectionConsigneCap());
         setConsigneVitesseAngulaire(3, actionVitesseAngulaire, getDirectionConsigneCap());
         setConsigneVitesseAngulaire(4, actionVitesseAngulaire, getDirectionConsigneCap());
+        GPIO_ToggleBits(GPIOD, GPIO_Pin_13);
+        
+        avancerMoteur(calculerActionMoteur(1,vitesseAngulaireM1), 1, getConsigneDirectionVitesseAngulaire(1));
+        avancerMoteur(calculerActionMoteur(2,vitesseAngulaireM2), 2, getConsigneDirectionVitesseAngulaire(2));
+        avancerMoteur(calculerActionMoteur(3,vitesseAngulaireM3), 3, getConsigneDirectionVitesseAngulaire(3));
+        avancerMoteur(calculerActionMoteur(4,vitesseAngulaireM4), 4, getConsigneDirectionVitesseAngulaire(4));      
+      
+        TIM_SetCounter(TIM1, 0);
+        TIM_SetCounter(TIM2, 0);
+        TIM_SetCounter(TIM3, 0);
+        TIM_SetCounter(TIM4, 0);
       }else if(typeAsservissement == 2)
       {
         //asservissement de vitesse linéaire
@@ -321,20 +332,39 @@ void TIM5_IRQHandler(void)
         double actionVitesseM24 = calculerActionVitesseLineaire(2, vitesseLineaireG2);
         setConsigneVitesseAngulaire(2, actionVitesseM24, getConsigneDirectionVitesseLineaire(2));
         setConsigneVitesseAngulaire(4, actionVitesseM24, getConsigneDirectionVitesseLineaire(2) == 0 ? 1 : 0);
+        GPIO_ToggleBits(GPIOD, GPIO_Pin_12);
+        
+        avancerMoteur(calculerActionMoteur(1,vitesseAngulaireM1), 1, getConsigneDirectionVitesseAngulaire(1));
+        avancerMoteur(calculerActionMoteur(2,vitesseAngulaireM2), 2, getConsigneDirectionVitesseAngulaire(2));
+        avancerMoteur(calculerActionMoteur(3,vitesseAngulaireM3), 3, getConsigneDirectionVitesseAngulaire(3));
+        avancerMoteur(calculerActionMoteur(4,vitesseAngulaireM4), 4, getConsigneDirectionVitesseAngulaire(4));      
+      
+        TIM_SetCounter(TIM1, 0);
+        TIM_SetCounter(TIM2, 0);
+        TIM_SetCounter(TIM3, 0);
+        TIM_SetCounter(TIM4, 0);
+      }else if(typeAsservissement == 3)
+      {
+          TIM_Cmd(TIM1, DISABLE);
+          TIM_Cmd(TIM2, DISABLE);
+          TIM_Cmd(TIM3, DISABLE);
+          TIM_Cmd(TIM4, DISABLE);
+          TIM_Cmd(TIM5, DISABLE);
+          
+          arreterMoteur(1);
+          arreterMoteur(2);
+          arreterMoteur(3);
+          arreterMoteur(4);
+          envoyerFinDeplacement();
       }
    
       //appliquer la consigne du PWM sur les moteur
-      avancerMoteur(calculerActionMoteur(1,vitesseAngulaireM1), 1, getConsigneDirectionVitesseAngulaire(1));
-      avancerMoteur(calculerActionMoteur(2,vitesseAngulaireM2), 2, getConsigneDirectionVitesseAngulaire(2));
-      avancerMoteur(calculerActionMoteur(3,vitesseAngulaireM3), 3, getConsigneDirectionVitesseAngulaire(3));
-      avancerMoteur(calculerActionMoteur(4,vitesseAngulaireM4), 4, getConsigneDirectionVitesseAngulaire(4));      
+        TIM_SetCounter(TIM1, 0);
+        TIM_SetCounter(TIM2, 0);
+        TIM_SetCounter(TIM3, 0);
+        TIM_SetCounter(TIM4, 0);
       
-      TIM_SetCounter(TIM1, 0);
-      TIM_SetCounter(TIM2, 0);
-      TIM_SetCounter(TIM3, 0);
-      TIM_SetCounter(TIM4, 0);
       
-      GPIO_ToggleBits(GPIOD, GPIO_Pin_12);
     
     TIM_ClearITPendingBit (TIM5, TIM_IT_Update);
   }

@@ -50,15 +50,16 @@ double calculerActionCap(double angleCalcule)
   tableauActionPICap[1] = tableauActionPICap[0];
   tableauActionPICap[0] = tableauActionPICap[1] + tableauParametrePIDiscretCap[0]*tableauErreurPICap[0]
                                               + tableauParametrePIDiscretCap[1]*tableauErreurPICap[1];
-  if(tableauActionPICap[0] < 0.1)
+  if(tableauActionPICap[0] < 0 || (tableauConsignePICap[0] - angleDeplacement) < ANGLE_CRITIQUE)
   {
     actionCap = 0;
     arreterMoteur(1);
     arreterMoteur(2);
     arreterMoteur(3);
     arreterMoteur(4);
-    initPIVitesseAngulaire();
-    //setTypeAsservissement(0);
+    //initPIVitesseAngulaire();
+    setTypeAsservissement(3);
+    
   }else
   {
     actionCap = tableauActionPICap[0];
@@ -66,7 +67,7 @@ double calculerActionCap(double angleCalcule)
   
   if(indiceConsigne < nbConsigne)
     indiceConsigne++;
-  
+
   return actionCap;
   
 }
@@ -74,10 +75,11 @@ double calculerActionCap(double angleCalcule)
 //0 => robot tourne sens anti-horaire, 1 => robot tourne sens horaire
 void setConsigneCap(double angle, uint16_t direction)
 {
-  initPICap();
+  //initPICap();
   indiceConsigne = 0;
   angleDeplacement = 0.0;
   tableauConsignePICap[0] = angle;
+  tableauConsignePICap[1] = (double)(direction);
   
   nbConsigne = (uint16_t)(angle/SAUT_CONSIGNE);
   
@@ -86,16 +88,8 @@ void setConsigneCap(double angle, uint16_t direction)
     tableauConsigneProgressive[i] = (double)(i)*(SAUT_CONSIGNE);
   }
   tableauConsigneProgressive[nbConsigne] = angle;
-  tableauConsignePICap[1] = (double)(direction);
-  
-//  if(angle == 0.0)
-//  {
-//    arreterMoteur(1);
-//    arreterMoteur(3);
-//    arreterMoteur(2);
-//    arreterMoteur(4);
-//    initPIVitesselineaire();
-//  }
+  tableauConsignePICap[0] = angle;
+  //initPIVitesseAngulaire();
 }
 
 double getConsigneCap(void)

@@ -1,61 +1,61 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.11.2.13589/W32 for ARM                16/Mar/2018  15:20:59
+# IAR ELF Linker V8.11.2.13589/W32 for ARM                22/Mar/2018  11:13:48
 # Copyright 2007-2017 IAR Systems AB.
 #
 #    Output file  =  
-#        D:\Fichier Mathieu\Session
-#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Exe\TIM_TimeBase.out
+#        D:\Fichier Mathieu\Session 6\Design
+#        3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Exe\TIM_TimeBase.out
 #    Map file     =  
-#        D:\Fichier Mathieu\Session
-#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\List\TIM_TimeBase.map
+#        D:\Fichier Mathieu\Session 6\Design
+#        3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\List\TIM_TimeBase.map
 #    Command line =  
-#        -f C:\Users\mathieu\AppData\Local\Temp\EW44D7.tmp ("D:\Fichier
-#        Mathieu\Session
-#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\asservissementCap.o"
-#        "D:\Fichier Mathieu\Session
-#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\asservissementVitesseAngulaire.o"
-#        "D:\Fichier Mathieu\Session
-#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\asservissementVitesseLineaire.o"
-#        "D:\Fichier Mathieu\Session
-#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\configTimer.o"
-#        "D:\Fichier Mathieu\Session
-#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\controleDistanceCapRobot.o"
-#        "D:\Fichier Mathieu\Session
-#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\controleMoteur.o"
-#        "D:\Fichier Mathieu\Session
-#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\FSM_USART_codePays.o"
-#        "D:\Fichier Mathieu\Session
-#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\FSM_USART_commande.o"
-#        "D:\Fichier Mathieu\Session
-#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\main.o"
-#        "D:\Fichier Mathieu\Session
-#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\misc.o"
-#        "D:\Fichier Mathieu\Session
-#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\startup_stm32f4xx.o"
-#        "D:\Fichier Mathieu\Session
-#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f4_discovery.o"
-#        "D:\Fichier Mathieu\Session
-#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f4xx_gpio.o"
-#        "D:\Fichier Mathieu\Session
-#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f4xx_it.o"
-#        "D:\Fichier Mathieu\Session
-#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f4xx_rcc.o"
-#        "D:\Fichier Mathieu\Session
-#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f4xx_tim.o"
-#        "D:\Fichier Mathieu\Session
-#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f4xx_usart.o"
-#        "D:\Fichier Mathieu\Session
-#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\system_stm32f4xx.o"
-#        "D:\Fichier Mathieu\Session
-#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\USART_config.o"
+#        -f C:\Users\mathieu\AppData\Local\Temp\EWF0FF.tmp ("D:\Fichier
+#        Mathieu\Session 6\Design
+#        3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\asservissementCap.o"
+#        "D:\Fichier Mathieu\Session 6\Design
+#        3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\asservissementVitesseAngulaire.o"
+#        "D:\Fichier Mathieu\Session 6\Design
+#        3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\asservissementVitesseLineaire.o"
+#        "D:\Fichier Mathieu\Session 6\Design
+#        3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\configTimer.o"
+#        "D:\Fichier Mathieu\Session 6\Design
+#        3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\controleDistanceCapRobot.o"
+#        "D:\Fichier Mathieu\Session 6\Design
+#        3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\controleMoteur.o"
+#        "D:\Fichier Mathieu\Session 6\Design
+#        3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\FSM_USART_codePays.o"
+#        "D:\Fichier Mathieu\Session 6\Design
+#        3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\FSM_USART_commande.o"
+#        "D:\Fichier Mathieu\Session 6\Design
+#        3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\main.o"
+#        "D:\Fichier Mathieu\Session 6\Design
+#        3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\misc.o"
+#        "D:\Fichier Mathieu\Session 6\Design
+#        3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\startup_stm32f4xx.o"
+#        "D:\Fichier Mathieu\Session 6\Design
+#        3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f4_discovery.o"
+#        "D:\Fichier Mathieu\Session 6\Design
+#        3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f4xx_gpio.o"
+#        "D:\Fichier Mathieu\Session 6\Design
+#        3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f4xx_it.o"
+#        "D:\Fichier Mathieu\Session 6\Design
+#        3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f4xx_rcc.o"
+#        "D:\Fichier Mathieu\Session 6\Design
+#        3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f4xx_tim.o"
+#        "D:\Fichier Mathieu\Session 6\Design
+#        3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\stm32f4xx_usart.o"
+#        "D:\Fichier Mathieu\Session 6\Design
+#        3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\system_stm32f4xx.o"
+#        "D:\Fichier Mathieu\Session 6\Design
+#        3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj\USART_config.o"
 #        --redirect _Printf=_PrintfSmallNoMb --redirect _Scanf=_ScanfSmallNoMb
-#        -o "D:\Fichier Mathieu\Session
-#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Exe\TIM_TimeBase.out"
-#        --map "D:\Fichier Mathieu\Session
-#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\List\TIM_TimeBase.map"
-#        --config "D:\Fichier Mathieu\Session
-#        5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\stm32f4xx_flash.icf"
+#        -o "D:\Fichier Mathieu\Session 6\Design
+#        3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Exe\TIM_TimeBase.out"
+#        --map "D:\Fichier Mathieu\Session 6\Design
+#        3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\List\TIM_TimeBase.map"
+#        --config "D:\Fichier Mathieu\Session 6\Design
+#        3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\stm32f4xx_flash.icf"
 #        --semihosting --entry __iar_program_start --vfe --text_out locale)
 #
 ###############################################################################
@@ -96,65 +96,55 @@ initialize by copy { rw };
   .intvec            ro code  0x08000000   0x188  startup_stm32f4xx.o [1]
                             - 0x08000188   0x188
 
-"P1":                                     0x339f
-  .text              ro code  0x08000188   0x4ec  stm32f4xx_it.o [1]
-  .text              ro code  0x08000674   0x2f1  main.o [1]
-  .text              ro code  0x08000968   0x2e8  stm32f4xx_tim.o [1]
-  .text              ro code  0x08000c50    0x1a  U32ToDbl.o [4]
-  .text              ro code  0x08000c6c   0x246  DblDiv.o [4]
-  .text              ro code  0x08000eb4   0x1a2  DblMul.o [4]
-  .text              ro code  0x08001058   0x178  DblAdd.o [4]
-  .text              ro code  0x080011d0   0x298  controleMoteur.o [1]
-  .text              ro code  0x08001468   0x118  asservissementVitesseAngulaire.o [1]
-  .text              ro code  0x08001580   0x170  asservissementCap.o [1]
-  .text              ro code  0x080016f0    0x90  controleDistanceCapRobot.o [1]
-  .text              ro code  0x08001780   0x12c  asservissementVitesseLineaire.o [1]
-  .text              ro code  0x080018ac    0x9a  stm32f4xx_gpio.o [1]
-  .text              ro code  0x08001948   0x13c  stm32f4xx_usart.o [1]
-  .text              ro code  0x08001a84    0x60  stm32f4_discovery.o [1]
-  .text              ro code  0x08001ae4   0x16c  configTimer.o [1]
-  .text              ro code  0x08001c50   0x136  USART_config.o [1]
-  .text              ro code  0x08001d88   0x114  FSM_USART_codePays.o [1]
-  .text              ro code  0x08001e9c   0x1b8  FSM_USART_commande.o [1]
-  .text              ro code  0x08002054    0xe2  DblSub.o [4]
-  .text              ro code  0x08002138    0xcc  stm32f4xx_rcc.o [1]
-  .text              ro code  0x08002204    0x3a  DblToS32.o [4]
-  .text              ro code  0x08002240    0x2e  DblCmpLe.o [4]
-  .text              ro code  0x08002270    0x2e  DblCmpGe.o [4]
-  .text              ro code  0x080022a0    0x22  S32ToDbl.o [4]
-  .text              ro code  0x080022c4    0x20  DblCmpEq.o [4]
-  .text              ro code  0x080022e4    0x68  misc.o [1]
-  .text              ro code  0x0800234c    0x4a  strcmp.o [5]
-  .text              ro code  0x08002398   0x174  iar_Stoulx.o [3]
-  .text              ro code  0x08002510   0x470  strto64.o [4]
-  .text              ro code  0x08002980    0x58  memchr.o [5]
-  .text              ro code  0x080029d8    0x70  frexp.o [4]
-  .text              ro code  0x08002a48   0x13a  ldexp.o [4]
-  .text              ro code  0x08002b82   0x122  iar_Stopfx.o [3]
-  .text              ro code  0x08002ca4   0x1cc  iar_Stoflt.o [3]
-  .text              ro code  0x08002e70   0x238  iar_Stoxflt.o [3]
-  .text              ro code  0x080030a8    0xe0  system_stm32f4xx.o [1]
-  .text              ro code  0x08003188    0x40  zero_init3.o [5]
-  .text              ro code  0x080031c8    0x38  packbits_init_single.o [5]
-  .text              ro code  0x08003200    0x28  data_init.o [5]
-  .iar.init_table    const    0x08003228    0x20  - Linker created -
-  .text              ro code  0x08003248    0x1a  cmain.o [5]
-  .text              ro code  0x08003262     0x4  low_level_init.o [3]
-  .text              ro code  0x08003266     0x4  exit.o [3]
-  .text              ro code  0x0800326c     0xa  cexit.o [5]
-  .text              ro code  0x08003278    0x14  exit.o [6]
-  .text              ro code  0x0800328c    0x10  startup_stm32f4xx.o [1]
-  .text              ro code  0x0800329c     0xc  cstartup_M.o [5]
-  .text              ro code  0x080032a8     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080032ac     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080032b0     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080032b4     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080032b8     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080032bc     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080032c0     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080032c4     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080032c8     0x4  startup_stm32f4xx.o [1]
-  .text              ro code  0x080032cc     0x4  startup_stm32f4xx.o [1]
+"P1":                                     0x33c7
+  .text              ro code  0x08000188   0x560  stm32f4xx_it.o [1]
+  .text              ro code  0x080006e8   0x298  main.o [1]
+  .text              ro code  0x08000980   0x2e8  stm32f4xx_tim.o [1]
+  .text              ro code  0x08000c68    0x1a  U32ToDbl.o [4]
+  .text              ro code  0x08000c84   0x246  DblDiv.o [4]
+  .text              ro code  0x08000ecc   0x1a2  DblMul.o [4]
+  .text              ro code  0x08001070   0x178  DblAdd.o [4]
+  .text              ro code  0x080011e8   0x298  controleMoteur.o [1]
+  .text              ro code  0x08001480   0x118  asservissementVitesseAngulaire.o [1]
+  .text              ro code  0x08001598   0x184  asservissementCap.o [1]
+  .text              ro code  0x0800171c    0x90  controleDistanceCapRobot.o [1]
+  .text              ro code  0x080017ac   0x128  asservissementVitesseLineaire.o [1]
+  .text              ro code  0x080018d4    0x9a  stm32f4xx_gpio.o [1]
+  .text              ro code  0x08001970   0x13c  stm32f4xx_usart.o [1]
+  .text              ro code  0x08001aac    0x60  stm32f4_discovery.o [1]
+  .text              ro code  0x08001b0c   0x16c  configTimer.o [1]
+  .text              ro code  0x08001c78   0x136  USART_config.o [1]
+  .text              ro code  0x08001db0   0x114  FSM_USART_codePays.o [1]
+  .text              ro code  0x08001ec4   0x1b8  FSM_USART_commande.o [1]
+  .text              ro code  0x0800207c    0xe2  DblSub.o [4]
+  .text              ro code  0x08002160    0xcc  stm32f4xx_rcc.o [1]
+  .text              ro code  0x0800222c    0x3a  DblToS32.o [4]
+  .text              ro code  0x08002268    0x2e  DblCmpLe.o [4]
+  .text              ro code  0x08002298    0x2e  DblCmpGe.o [4]
+  .text              ro code  0x080022c8    0x22  S32ToDbl.o [4]
+  .text              ro code  0x080022ec    0x20  DblCmpEq.o [4]
+  .text              ro code  0x0800230c    0x68  misc.o [1]
+  .text              ro code  0x08002374    0x4a  strcmp.o [5]
+  .text              ro code  0x080023c0   0x174  iar_Stoulx.o [3]
+  .text              ro code  0x08002538   0x470  strto64.o [4]
+  .text              ro code  0x080029a8    0x58  memchr.o [5]
+  .text              ro code  0x08002a00    0x70  frexp.o [4]
+  .text              ro code  0x08002a70   0x13a  ldexp.o [4]
+  .text              ro code  0x08002baa   0x122  iar_Stopfx.o [3]
+  .text              ro code  0x08002ccc   0x1cc  iar_Stoflt.o [3]
+  .text              ro code  0x08002e98   0x238  iar_Stoxflt.o [3]
+  .text              ro code  0x080030d0    0xe0  system_stm32f4xx.o [1]
+  .text              ro code  0x080031b0    0x40  zero_init3.o [5]
+  .text              ro code  0x080031f0    0x38  packbits_init_single.o [5]
+  .text              ro code  0x08003228    0x28  data_init.o [5]
+  .iar.init_table    const    0x08003250    0x20  - Linker created -
+  .text              ro code  0x08003270    0x1a  cmain.o [5]
+  .text              ro code  0x0800328a     0x4  low_level_init.o [3]
+  .text              ro code  0x0800328e     0x4  exit.o [3]
+  .text              ro code  0x08003294     0xa  cexit.o [5]
+  .text              ro code  0x080032a0    0x14  exit.o [6]
+  .text              ro code  0x080032b4    0x10  startup_stm32f4xx.o [1]
+  .text              ro code  0x080032c4     0xc  cstartup_M.o [5]
   .text              ro code  0x080032d0     0x4  startup_stm32f4xx.o [1]
   .text              ro code  0x080032d4     0x4  startup_stm32f4xx.o [1]
   .text              ro code  0x080032d8     0x4  startup_stm32f4xx.o [1]
@@ -236,10 +226,20 @@ initialize by copy { rw };
   .text              ro code  0x08003408     0x4  startup_stm32f4xx.o [1]
   .text              ro code  0x0800340c     0x4  startup_stm32f4xx.o [1]
   .text              ro code  0x08003410     0x4  startup_stm32f4xx.o [1]
-  .rodata            const    0x08003414     0x0  zero_init3.o [5]
-  .rodata            const    0x08003414     0x0  packbits_init_single.o [5]
-  Initializer bytes  const    0x08003414   0x113  <for P2-1>
-                            - 0x08003527  0x339f
+  .text              ro code  0x08003414     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003418     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x0800341c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003420     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003424     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003428     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x0800342c     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003430     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003434     0x4  startup_stm32f4xx.o [1]
+  .text              ro code  0x08003438     0x4  startup_stm32f4xx.o [1]
+  .rodata            const    0x0800343c     0x0  zero_init3.o [5]
+  .rodata            const    0x0800343c     0x0  packbits_init_single.o [5]
+  Initializer bytes  const    0x0800343c   0x113  <for P2-1>
+                            - 0x0800354f  0x33c7
 
 "P2", part 1 of 3:                        0x1dc4
   P2-1                        0x20000000  0x1dc4  <Init block>
@@ -252,31 +252,32 @@ initialize by copy { rw };
     .data            inited   0x20001db0    0x14  system_stm32f4xx.o [1]
                             - 0x20001dc4  0x1dc4
 
-"P2", part 2 of 3:                         0x87c
+"P2", part 2 of 3:                         0x880
   .bss               zero     0x20001dc8   0x5a0  asservissementCap.o [1]
-  .bss               zero     0x20002368    0x80  main.o [1]
-  .bss               zero     0x200023e8    0x4c  FSM_USART_commande.o [1]
-  .bss               zero     0x20002434    0x3c  stm32f4xx_it.o [1]
-  .bss               zero     0x20002470    0x40  asservissementCap.o [1]
-  .bss               zero     0x200024b0    0x40  asservissementVitesseAngulaire.o [1]
+  .bss               zero     0x20002368    0x84  main.o [1]
+  .bss               zero     0x200023ec    0x3c  stm32f4xx_it.o [1]
+  .bss               zero     0x20002428    0x4c  FSM_USART_commande.o [1]
+  .bss               zero     0x20002474    0x3c  stm32f4xx_it.o [1]
+  .bss               zero     0x200024b0    0x40  asservissementCap.o [1]
   .bss               zero     0x200024f0    0x40  asservissementVitesseAngulaire.o [1]
-  .bss               zero     0x20002530    0x3c  stm32f4xx_it.o [1]
-  .bss               zero     0x2000256c    0x28  USART_config.o [1]
-  .bss               zero     0x20002594    0x24  FSM_USART_codePays.o [1]
-  .bss               zero     0x200025b8    0x22  controleMoteur.o [1]
-  .bss               zero     0x200025dc     0xc  FSM_USART_commande.o [1]
-  .bss               zero     0x200025e8    0x18  controleDistanceCapRobot.o [1]
-  .bss               zero     0x20002600    0x18  FSM_USART_commande.o [1]
-  .bss               zero     0x20002618    0x10  controleMoteur.o [1]
-  .bss               zero     0x20002628     0x8  controleMoteur.o [1]
-  .bss               zero     0x20002630     0x8  main.o [1]
-  .bss               zero     0x20002638     0x8  USART_config.o [1]
-                            - 0x20002640   0x87c
+  .bss               zero     0x20002530    0x40  asservissementVitesseAngulaire.o [1]
+  .bss               zero     0x20002570    0x28  USART_config.o [1]
+  .bss               zero     0x20002598    0x24  FSM_USART_codePays.o [1]
+  .bss               zero     0x200025bc    0x22  controleMoteur.o [1]
+  .bss               zero     0x200025e0    0x18  controleDistanceCapRobot.o [1]
+  .bss               zero     0x200025f8    0x18  FSM_USART_commande.o [1]
+  .bss               zero     0x20002610    0x10  controleMoteur.o [1]
+  .bss               zero     0x20002620     0xc  FSM_USART_commande.o [1]
+  .bss               zero     0x2000262c     0x8  controleMoteur.o [1]
+  .bss               zero     0x20002634     0x8  USART_config.o [1]
+  .bss               zero     0x2000263c     0x4  main.o [1]
+  .bss               zero     0x20002640     0x4  main.o [1]
+                            - 0x20002644   0x880
 
 "P2", part 3 of 3:                         0x400
-  CSTACK                      0x20002640   0x400  <Block>
-    CSTACK           uninit   0x20002640   0x400  <Block tail>
-                            - 0x20002a40   0x400
+  CSTACK                      0x20002648   0x400  <Block>
+    CSTACK           uninit   0x20002648   0x400  <Block tail>
+                            - 0x20002a48   0x400
 
 
 *******************************************************************************
@@ -286,12 +287,12 @@ initialize by copy { rw };
           Address     Size
           -------     ----
 Zero (__iar_zero_init3)
-    1 destination range, total size 0x878:
-          0x20001dc8   0x878
+    1 destination range, total size 0x87c:
+          0x20001dc8   0x87c
 
 Copy/packbits (__iar_packbits_init_single3)
     1 source range, total size 0x113 (3% of destination):
-          0x08003414   0x113
+          0x0800343c   0x113
     1 destination range, total size 0x1dc4:
           0x20000000  0x1dc4
 
@@ -303,28 +304,28 @@ Copy/packbits (__iar_packbits_init_single3)
 
     Module                            ro code  ro data  rw data
     ------                            -------  -------  -------
-D:\Fichier Mathieu\Session 5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj: [1]
+D:\Fichier Mathieu\Session 6\Design 3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj: [1]
     FSM_USART_codePays.o                  276                36
     FSM_USART_commande.o                  440               112
     USART_config.o                        310                48
-    asservissementCap.o                   368             1 504
+    asservissementCap.o                   388             1 504
     asservissementVitesseAngulaire.o      280        4      256
-    asservissementVitesseLineaire.o       300        5      128
+    asservissementVitesseLineaire.o       296        5      128
     configTimer.o                         364
     controleDistanceCapRobot.o            144                24
     controleMoteur.o                      664        2      116
-    main.o                                753               136
+    main.o                                664               140
     misc.o                                104
     startup_stm32f4xx.o                   772
     stm32f4_discovery.o                    96                16
     stm32f4xx_gpio.o                      154
-    stm32f4xx_it.o                      1 260      262    7 368
+    stm32f4xx_it.o                      1 376      262    7 368
     stm32f4xx_rcc.o                       204        1       16
     stm32f4xx_tim.o                       744
     stm32f4xx_usart.o                     316
     system_stm32f4xx.o                    224        1       20
     -----------------------------------------------------------
-    Total:                              7 773      275    9 780
+    Total:                              7 816      275    9 784
 
 command line: [2]
     -----------------------------------------------------------
@@ -374,10 +375,10 @@ shb_l.a: [6]
     -----------------------------------------------------------
     Total:                                 20
 
-    Gaps                                   33                12
+    Gaps                                   30                12
     Linker created                                  32    1 024
 ---------------------------------------------------------------
-    Grand Total:                       13 300      307   10 816
+    Grand Total:                       13 340      307   10 820
 
 
 *******************************************************************************
@@ -386,266 +387,268 @@ shb_l.a: [6]
 
 Entry                      Address   Size  Type      Object
 -----                      -------   ----  ----      ------
-.iar.init_table$$Base   0x08003228          --   Gb  - Linker created -
-.iar.init_table$$Limit  0x08003248          --   Gb  - Linker created -
-?main                   0x08003249         Code  Gb  cmain.o [5]
+.iar.init_table$$Base   0x08003250          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x08003270          --   Gb  - Linker created -
+?main                   0x08003271         Code  Gb  cmain.o [5]
 AHBPrescTable           0x20001db0   0x10  Data  Gb  system_stm32f4xx.o [1]
 APBAHBPrescTable        0x20001da0   0x10  Data  Lc  stm32f4xx_rcc.o [1]
 BusFault_Handler        0x0800018f    0x2  Code  Gb  stm32f4xx_it.o [1]
-CSTACK$$Base            0x20002640          --   Gb  - Linker created -
-CSTACK$$Limit           0x20002a40          --   Gb  - Linker created -
+CSTACK$$Base            0x20002648          --   Gb  - Linker created -
+CSTACK$$Limit           0x20002a48          --   Gb  - Linker created -
 DebugMon_Handler        0x08000193    0x2  Code  Gb  stm32f4xx_it.o [1]
-Dtentox                 0x08002621  0x194  Code  Lc  strto64.o [4]
-GPIO_CLK                0x08001ad4   0x10  Data  Gb  stm32f4_discovery.o [1]
-GPIO_Init               0x080018ad   0x70  Code  Gb  stm32f4xx_gpio.o [1]
-GPIO_PIN                0x08001acc    0x8  Data  Gb  stm32f4_discovery.o [1]
+Dtentox                 0x08002649  0x194  Code  Lc  strto64.o [4]
+GPIO_CLK                0x08001afc   0x10  Data  Gb  stm32f4_discovery.o [1]
+GPIO_Init               0x080018d5   0x70  Code  Gb  stm32f4xx_gpio.o [1]
+GPIO_PIN                0x08001af4    0x8  Data  Gb  stm32f4_discovery.o [1]
 GPIO_PORT               0x20001d90   0x10  Data  Gb  stm32f4_discovery.o [1]
-GPIO_PinAFConfig        0x08001925   0x22  Code  Gb  stm32f4xx_gpio.o [1]
-GPIO_ToggleBits         0x0800191d    0x8  Code  Gb  stm32f4xx_gpio.o [1]
-GPIO_init               0x20002638    0x8  Data  Gb  USART_config.o [1]
+GPIO_PinAFConfig        0x0800194d   0x22  Code  Gb  stm32f4xx_gpio.o [1]
+GPIO_ToggleBits         0x08001945    0x8  Code  Gb  stm32f4xx_gpio.o [1]
+GPIO_init               0x20002634    0x8  Data  Gb  USART_config.o [1]
 HardFault_Handler       0x0800018b    0x2  Code  Gb  stm32f4xx_it.o [1]
-InitGPIO_USART          0x08001d01   0x56  Code  Gb  USART_config.o [1]
-InitUSART               0x08001c51   0xb0  Code  Gb  USART_config.o [1]
+InitGPIO_USART          0x08001d29   0x56  Code  Gb  USART_config.o [1]
+InitUSART               0x08001c79   0xb0  Code  Gb  USART_config.o [1]
 MemManage_Handler       0x0800018d    0x2  Code  Gb  stm32f4xx_it.o [1]
 NMI_Handler             0x08000189    0x2  Code  Gb  stm32f4xx_it.o [1]
-NVIC_Init               0x080022e5   0x56  Code  Gb  misc.o [1]
-NVIC_usart2             0x2000256c    0x4  Data  Gb  USART_config.o [1]
-NVIC_usart3             0x20002570    0x4  Data  Gb  USART_config.o [1]
+NVIC_Init               0x0800230d   0x56  Code  Gb  misc.o [1]
+NVIC_usart2             0x20002570    0x4  Data  Gb  USART_config.o [1]
+NVIC_usart3             0x20002574    0x4  Data  Gb  USART_config.o [1]
 PendSV_Handler          0x08000197    0x2  Code  Gb  stm32f4xx_it.o [1]
-RCC_AHB1PeriphClockCmd  0x080021b3   0x12  Code  Gb  stm32f4xx_rcc.o [1]
-RCC_APB1PeriphClockCmd  0x080021c5   0x12  Code  Gb  stm32f4xx_rcc.o [1]
-RCC_APB2PeriphClockCmd  0x080021d7   0x12  Code  Gb  stm32f4xx_rcc.o [1]
-RCC_GetClocksFreq       0x08002139   0x7a  Code  Gb  stm32f4xx_rcc.o [1]
-Region$$Table$$Base     0x08003228          --   Gb  - Linker created -
-Region$$Table$$Limit    0x08003248          --   Gb  - Linker created -
-STM_EVAL_LEDInit        0x08001a85   0x3a  Code  Gb  stm32f4_discovery.o [1]
+RCC_AHB1PeriphClockCmd  0x080021db   0x12  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_APB1PeriphClockCmd  0x080021ed   0x12  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_APB2PeriphClockCmd  0x080021ff   0x12  Code  Gb  stm32f4xx_rcc.o [1]
+RCC_GetClocksFreq       0x08002161   0x7a  Code  Gb  stm32f4xx_rcc.o [1]
+Region$$Table$$Base     0x08003250          --   Gb  - Linker created -
+Region$$Table$$Limit    0x08003270          --   Gb  - Linker created -
+STM_EVAL_LEDInit        0x08001aad   0x3a  Code  Gb  stm32f4_discovery.o [1]
 SVC_Handler             0x08000195    0x2  Code  Gb  stm32f4xx_it.o [1]
 SysTick_Handler         0x08000199    0x4  Code  Gb  stm32f4xx_it.o [1]
 SystemCoreClock         0x20001dc0    0x4  Data  Gb  system_stm32f4xx.o [1]
-SystemInit              0x080030a9   0xc4  Code  Gb  system_stm32f4xx.o [1]
-TIM5_IRQHandler         0x0800019d  0x374  Code  Gb  stm32f4xx_it.o [1]
-TIM_ARRPreloadConfig    0x080009d9   0x14  Code  Gb  stm32f4xx_tim.o [1]
-TIM_ClearITPendingBit   0x08000c23    0x2  Code  Gb  stm32f4xx_tim.o [1]
-TIM_Cmd                 0x080009ed   0x14  Code  Gb  stm32f4xx_tim.o [1]
-TIM_CtrlPWMOutputs      0x08000be9   0x16  Code  Gb  stm32f4xx_tim.o [1]
+SystemInit              0x080030d1   0xc4  Code  Gb  system_stm32f4xx.o [1]
+TIM5_IRQHandler         0x0800019d  0x3be  Code  Gb  stm32f4xx_it.o [1]
+TIM_ARRPreloadConfig    0x080009f1   0x14  Code  Gb  stm32f4xx_tim.o [1]
+TIM_ClearITPendingBit   0x08000c3b    0x2  Code  Gb  stm32f4xx_tim.o [1]
+TIM_Cmd                 0x08000a05   0x14  Code  Gb  stm32f4xx_tim.o [1]
+TIM_CtrlPWMOutputs      0x08000c01   0x16  Code  Gb  stm32f4xx_tim.o [1]
 TIM_ETRClockMode2Config
-                        0x08000c2b   0x12  Code  Gb  stm32f4xx_tim.o [1]
-TIM_ETRConfig           0x08000c3d   0x14  Code  Gb  stm32f4xx_tim.o [1]
-TIM_GetCounter          0x080009cf    0x4  Code  Gb  stm32f4xx_tim.o [1]
-TIM_GetITStatus         0x08000c0f   0x14  Code  Gb  stm32f4xx_tim.o [1]
-TIM_ITConfig            0x08000bff   0x10  Code  Gb  stm32f4xx_tim.o [1]
-TIM_OC1Init             0x08000a01   0x64  Code  Gb  stm32f4xx_tim.o [1]
-TIM_OC1PreloadConfig    0x08000bad    0x6  Code  Gb  stm32f4xx_tim.o [1]
-TIM_OC2Init             0x08000a65   0x6e  Code  Gb  stm32f4xx_tim.o [1]
-TIM_OC2PreloadConfig    0x08000bbb    0x6  Code  Gb  stm32f4xx_tim.o [1]
-TIM_OC3Init             0x08000ad3   0x6c  Code  Gb  stm32f4xx_tim.o [1]
-TIM_OC3PreloadConfig    0x08000bcb    0x6  Code  Gb  stm32f4xx_tim.o [1]
-TIM_OC4Init             0x08000b3f   0x52  Code  Gb  stm32f4xx_tim.o [1]
-TIM_OC4PreloadConfig    0x08000bd9    0x6  Code  Gb  stm32f4xx_tim.o [1]
-TIM_SetCounter          0x080009cb    0x4  Code  Gb  stm32f4xx_tim.o [1]
-TIM_TimeBaseInit        0x08000969   0x62  Code  Gb  stm32f4xx_tim.o [1]
-TimingDelay             0x20002630    0x4  Data  Lc  main.o [1]
-TimingDelay_Decrement   0x08000915    0xe  Code  Gb  main.o [1]
-USART2_IRQHandler       0x08000559   0x32  Code  Gb  stm32f4xx_it.o [1]
-USART2_init             0x20002574   0x10  Data  Gb  USART_config.o [1]
-USART3_IRQHandler       0x0800058b   0x32  Code  Gb  stm32f4xx_it.o [1]
-USART3_init             0x20002584   0x10  Data  Gb  USART_config.o [1]
+                        0x08000c43   0x12  Code  Gb  stm32f4xx_tim.o [1]
+TIM_ETRConfig           0x08000c55   0x14  Code  Gb  stm32f4xx_tim.o [1]
+TIM_GetCounter          0x080009e7    0x4  Code  Gb  stm32f4xx_tim.o [1]
+TIM_GetITStatus         0x08000c27   0x14  Code  Gb  stm32f4xx_tim.o [1]
+TIM_ITConfig            0x08000c17   0x10  Code  Gb  stm32f4xx_tim.o [1]
+TIM_OC1Init             0x08000a19   0x64  Code  Gb  stm32f4xx_tim.o [1]
+TIM_OC1PreloadConfig    0x08000bc5    0x6  Code  Gb  stm32f4xx_tim.o [1]
+TIM_OC2Init             0x08000a7d   0x6e  Code  Gb  stm32f4xx_tim.o [1]
+TIM_OC2PreloadConfig    0x08000bd3    0x6  Code  Gb  stm32f4xx_tim.o [1]
+TIM_OC3Init             0x08000aeb   0x6c  Code  Gb  stm32f4xx_tim.o [1]
+TIM_OC3PreloadConfig    0x08000be3    0x6  Code  Gb  stm32f4xx_tim.o [1]
+TIM_OC4Init             0x08000b57   0x52  Code  Gb  stm32f4xx_tim.o [1]
+TIM_OC4PreloadConfig    0x08000bf1    0x6  Code  Gb  stm32f4xx_tim.o [1]
+TIM_SetCounter          0x080009e3    0x4  Code  Gb  stm32f4xx_tim.o [1]
+TIM_TimeBaseInit        0x08000981   0x62  Code  Gb  stm32f4xx_tim.o [1]
+TimingDelay             0x2000263c    0x4  Data  Lc  main.o [1]
+TimingDelay_Decrement   0x08000933    0xe  Code  Gb  main.o [1]
+USART2_IRQHandler       0x080005d1   0x32  Code  Gb  stm32f4xx_it.o [1]
+USART2_init             0x20002578   0x10  Data  Gb  USART_config.o [1]
+USART3_IRQHandler       0x08000603   0x32  Code  Gb  stm32f4xx_it.o [1]
+USART3_init             0x20002588   0x10  Data  Gb  USART_config.o [1]
 USART_ClearITPendingBit
-                        0x08001a75    0xa  Code  Gb  stm32f4xx_usart.o [1]
-USART_Cmd               0x080019f1   0x14  Code  Gb  stm32f4xx_usart.o [1]
-USART_GetITStatus       0x08001a3b   0x3a  Code  Gb  stm32f4xx_usart.o [1]
-USART_ITConfig          0x08001a0b   0x30  Code  Gb  stm32f4xx_usart.o [1]
-USART_Init              0x08001949   0x9e  Code  Gb  stm32f4xx_usart.o [1]
+                        0x08001a9d    0xa  Code  Gb  stm32f4xx_usart.o [1]
+USART_Cmd               0x08001a19   0x14  Code  Gb  stm32f4xx_usart.o [1]
+USART_GetITStatus       0x08001a63   0x3a  Code  Gb  stm32f4xx_usart.o [1]
+USART_ITConfig          0x08001a33   0x30  Code  Gb  stm32f4xx_usart.o [1]
+USART_Init              0x08001971   0x9e  Code  Gb  stm32f4xx_usart.o [1]
 UsageFault_Handler      0x08000191    0x2  Code  Gb  stm32f4xx_it.o [1]
-__aeabi_cdcmpeq         0x080022c5         Code  Gb  DblCmpEq.o [4]
-__aeabi_cdcmple         0x08002241         Code  Gb  DblCmpLe.o [4]
-__aeabi_cdrcmple        0x08002271         Code  Gb  DblCmpGe.o [4]
-__aeabi_d2iz            0x08002205         Code  Gb  DblToS32.o [4]
-__aeabi_dadd            0x08001059         Code  Gb  DblAdd.o [4]
-__aeabi_ddiv            0x08000c6d         Code  Gb  DblDiv.o [4]
-__aeabi_dmul            0x08000eb5         Code  Gb  DblMul.o [4]
-__aeabi_dsub            0x08002055         Code  Gb  DblSub.o [4]
-__aeabi_i2d             0x080022a1         Code  Gb  S32ToDbl.o [4]
-__aeabi_ui2d            0x08000c51         Code  Gb  U32ToDbl.o [4]
-__cmain                 0x08003249         Code  Gb  cmain.o [5]
-__exit                  0x08003279   0x14  Code  Gb  exit.o [6]
-__iar_Memchr            0x08002981         Code  Gb  memchr.o [5]
-__iar_Sto64             0x080027b5  0x14e  Code  Gb  strto64.o [4]
-__iar_Stoflt            0x08002ca5  0x1cc  Code  Gb  iar_Stoflt.o [3]
-__iar_Stopfx            0x08002b83  0x122  Code  Gb  iar_Stopfx.o [3]
-__iar_Stoulx            0x08002399  0x114  Code  Gb  iar_Stoulx.o [3]
-__iar_Stoxflt           0x08002e71  0x202  Code  Gb  iar_Stoxflt.o [3]
-__iar_Stoxflt::digits   0x08003078   0x18  Data  Lc  iar_Stoxflt.o [3]
-__iar_Stoxflt::vals     0x08003090   0x18  Data  Lc  iar_Stoxflt.o [3]
-__iar_dadd              0x08002065         Code  Gb  DblSub.o [4]
-__iar_data_init3        0x08003201   0x28  Code  Gb  data_init.o [5]
-__iar_dsub              0x08001069         Code  Gb  DblAdd.o [4]
-__iar_dsubStart         0x0800107b         Code  Gb  DblAdd.o [4]
-__iar_frexp             0x080029e5         Code  Gb  frexp.o [4]
-__iar_frexp64           0x080029d9         Code  Gb  frexp.o [4]
-__iar_frexpl            0x080029e5         Code  Gb  frexp.o [4]
-__iar_ldexp64           0x08002a49         Code  Gb  ldexp.o [4]
+__aeabi_cdcmpeq         0x080022ed         Code  Gb  DblCmpEq.o [4]
+__aeabi_cdcmple         0x08002269         Code  Gb  DblCmpLe.o [4]
+__aeabi_cdrcmple        0x08002299         Code  Gb  DblCmpGe.o [4]
+__aeabi_d2iz            0x0800222d         Code  Gb  DblToS32.o [4]
+__aeabi_dadd            0x08001071         Code  Gb  DblAdd.o [4]
+__aeabi_ddiv            0x08000c85         Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x08000ecd         Code  Gb  DblMul.o [4]
+__aeabi_dsub            0x0800207d         Code  Gb  DblSub.o [4]
+__aeabi_i2d             0x080022c9         Code  Gb  S32ToDbl.o [4]
+__aeabi_ui2d            0x08000c69         Code  Gb  U32ToDbl.o [4]
+__cmain                 0x08003271         Code  Gb  cmain.o [5]
+__exit                  0x080032a1   0x14  Code  Gb  exit.o [6]
+__iar_Memchr            0x080029a9         Code  Gb  memchr.o [5]
+__iar_Sto64             0x080027dd  0x14e  Code  Gb  strto64.o [4]
+__iar_Stoflt            0x08002ccd  0x1cc  Code  Gb  iar_Stoflt.o [3]
+__iar_Stopfx            0x08002bab  0x122  Code  Gb  iar_Stopfx.o [3]
+__iar_Stoulx            0x080023c1  0x114  Code  Gb  iar_Stoulx.o [3]
+__iar_Stoxflt           0x08002e99  0x202  Code  Gb  iar_Stoxflt.o [3]
+__iar_Stoxflt::digits   0x080030a0   0x18  Data  Lc  iar_Stoxflt.o [3]
+__iar_Stoxflt::vals     0x080030b8   0x18  Data  Lc  iar_Stoxflt.o [3]
+__iar_dadd              0x0800208d         Code  Gb  DblSub.o [4]
+__iar_data_init3        0x08003229   0x28  Code  Gb  data_init.o [5]
+__iar_dsub              0x08001081         Code  Gb  DblAdd.o [4]
+__iar_dsubStart         0x08001093         Code  Gb  DblAdd.o [4]
+__iar_frexp             0x08002a0d         Code  Gb  frexp.o [4]
+__iar_frexp64           0x08002a01         Code  Gb  frexp.o [4]
+__iar_frexpl            0x08002a0d         Code  Gb  frexp.o [4]
+__iar_ldexp64           0x08002a71         Code  Gb  ldexp.o [4]
 __iar_packbits_init_single3
-                        0x080031c9   0x38  Code  Gb  packbits_init_single.o [5]
-__iar_program_start     0x0800329d         Code  Gb  cstartup_M.o [5]
-__iar_scalbln64         0x08002a49         Code  Gb  ldexp.o [4]
-__iar_scalbn64          0x08002a49         Code  Gb  ldexp.o [4]
+                        0x080031f1   0x38  Code  Gb  packbits_init_single.o [5]
+__iar_program_start     0x080032c5         Code  Gb  cstartup_M.o [5]
+__iar_scalbln64         0x08002a71         Code  Gb  ldexp.o [4]
+__iar_scalbn64          0x08002a71         Code  Gb  ldexp.o [4]
 __iar_systems$$module {Abs}
                         0x00000001         Data  Gb  command line/config [2]
-__iar_zero_init3        0x08003189   0x40  Code  Gb  zero_init3.o [5]
-__low_level_init        0x08003263    0x4  Code  Gb  low_level_init.o [3]
+__iar_zero_init3        0x080031b1   0x40  Code  Gb  zero_init3.o [5]
+__low_level_init        0x0800328b    0x4  Code  Gb  low_level_init.o [3]
 __vector_table          0x08000000         Data  Gb  startup_stm32f4xx.o [1]
-_call_main              0x08003255         Code  Gb  cmain.o [5]
-_exit                   0x0800326d         Code  Gb  cexit.o [5]
-_main                   0x0800325f         Code  Gb  cmain.o [5]
-angleDeplacement        0x200024a8    0x8  Data  Gb  asservissementCap.o [1]
+_call_main              0x0800327d         Code  Gb  cmain.o [5]
+_exit                   0x08003295         Code  Gb  cexit.o [5]
+_main                   0x08003287         Code  Gb  cmain.o [5]
+angleDeplacement        0x200024e8    0x8  Data  Gb  asservissementCap.o [1]
 angleRobot              0x20001d78    0x8  Data  Gb  stm32f4xx_it.o [1]
-angleRotation           0x20002428    0x8  Data  Lc  FSM_USART_commande.o [1]
-angleRotationChar       0x2000260c    0xc  Data  Gb  FSM_USART_commande.o [1]
+angleRotation           0x20002468    0x8  Data  Lc  FSM_USART_commande.o [1]
+angleRotationChar       0x20002604    0xc  Data  Gb  FSM_USART_commande.o [1]
 appliquerConsigneDeplacement
-                        0x0800084d   0x28  Code  Gb  main.o [1]
+                        0x08000881   0x44  Code  Gb  main.o [1]
 appliquerConsigneRotation
-                        0x08000875   0x1c  Code  Gb  main.o [1]
-arreterMoteur           0x080012f9   0x6e  Code  Gb  controleMoteur.o [1]
-atof                    0x08002931    0x8  Code  Gb  strto64.o [4]
-atoi                    0x080024b3    0x2  Code  Gb  iar_Stoulx.o [3]
-avancerMoteur           0x08001369   0xa6  Code  Gb  controleMoteur.o [1]
+                        0x080008c5   0x36  Code  Gb  main.o [1]
+arreterMoteur           0x08001311   0x6e  Code  Gb  controleMoteur.o [1]
+atof                    0x08002959    0x8  Code  Gb  strto64.o [4]
+atoi                    0x080024db    0x2  Code  Gb  iar_Stoulx.o [3]
+avancerMoteur           0x08001381   0xa6  Code  Gb  controleMoteur.o [1]
 bufferRx                0x2000236c   0x34  Data  Gb  main.o [1]
 bufferRx_PC             0x200023a0   0x34  Data  Gb  main.o [1]
-bufferTX                0x20002434   0x34  Data  Gb  stm32f4xx_it.o [1]
-bufferTX_PC             0x20002530   0x34  Data  Gb  stm32f4xx_it.o [1]
-calculerActionCap       0x080015b3   0xb2  Code  Gb  asservissementCap.o [1]
-calculerActionMoteur    0x080014a7   0x82  Code  Gb  asservissementVitesseAngulaire.o [1]
+bufferTX                0x200023ec   0x34  Data  Gb  stm32f4xx_it.o [1]
+bufferTX_PC             0x20002474   0x34  Data  Gb  stm32f4xx_it.o [1]
+calculerActionCap       0x080015cb   0xce  Code  Gb  asservissementCap.o [1]
+calculerActionMoteur    0x080014bf   0x82  Code  Gb  asservissementVitesseAngulaire.o [1]
 calculerActionVitesseLineaire
-                        0x080017c5   0x68  Code  Gb  asservissementVitesseLineaire.o [1]
-calculerCheckSum        0x08001e3b   0x42  Code  Gb  FSM_USART_codePays.o [1]
+                        0x080017f1   0x68  Code  Gb  asservissementVitesseLineaire.o [1]
+calculerCheckSum        0x08001e63   0x42  Code  Gb  FSM_USART_codePays.o [1]
 calculerConsigneVitesseLineaire
-                        0x080016f1   0x54  Code  Gb  controleDistanceCapRobot.o [1]
-checksum                0x200025b4    0x4  Data  Gb  FSM_USART_codePays.o [1]
-checksumCOM             0x200025a0    0x4  Data  Gb  FSM_USART_codePays.o [1]
-checksumChar            0x200025dc    0xc  Data  Gb  FSM_USART_commande.o [1]
-codePays                0x2000259c    0x4  Data  Gb  FSM_USART_codePays.o [1]
-codePaysInteger         0x20002594    0x1  Data  Gb  FSM_USART_codePays.o [1]
+                        0x0800171d   0x54  Code  Gb  controleDistanceCapRobot.o [1]
+checksum                0x200025b8    0x4  Data  Gb  FSM_USART_codePays.o [1]
+checksumCOM             0x200025a4    0x4  Data  Gb  FSM_USART_codePays.o [1]
+checksumChar            0x20002620    0xc  Data  Gb  FSM_USART_commande.o [1]
+codePays                0x200025a0    0x4  Data  Gb  FSM_USART_codePays.o [1]
+codePaysInteger         0x20002598    0x1  Data  Gb  FSM_USART_codePays.o [1]
 codePaysRecu            0x200023e4    0x4  Data  Gb  main.o [1]
-commande                0x200023e8    0x1  Data  Gb  FSM_USART_commande.o [1]
+commande                0x20002428    0x1  Data  Gb  FSM_USART_commande.o [1]
 comptePulseTIM1         0x20001d80    0x4  Data  Gb  stm32f4xx_it.o [1]
 comptePulseTIM2         0x20001d84    0x4  Data  Gb  stm32f4xx_it.o [1]
 comptePulseTIM3         0x20001d88    0x4  Data  Gb  stm32f4xx_it.o [1]
 comptePulseTIM4         0x20001d8c    0x4  Data  Gb  stm32f4xx_it.o [1]
 consigneVitesseM1       0x20001408  0x960  Data  Gb  stm32f4xx_it.o [1]
-ddiv                    0x0800258d   0x7c  Code  Lc  strto64.o [4]
+ddiv                    0x080025b5   0x7c  Code  Lc  strto64.o [4]
 diametreRoue            0x20001d68    0x8  Data  Gb  stm32f4xx_it.o [1]
-digits                  0x080024bc   0x28  Data  Lc  iar_Stoulx.o [3]
-directionDeplacement    0x20002412    0x2  Data  Lc  FSM_USART_commande.o [1]
+digits                  0x080024e4   0x28  Data  Lc  iar_Stoulx.o [3]
+directionDeplacement    0x20002452    0x2  Data  Lc  FSM_USART_commande.o [1]
 directionDeplacementChar
-                        0x200023f8    0xc  Data  Gb  FSM_USART_commande.o [1]
-directionRotation       0x20002414    0x2  Data  Lc  FSM_USART_commande.o [1]
-directionRotationChar   0x20002404    0xc  Data  Gb  FSM_USART_commande.o [1]
-distanceCible           0x200025e8   0x10  Data  Lc  controleDistanceCapRobot.o [1]
-distanceDeplacement     0x20002418    0x8  Data  Lc  FSM_USART_commande.o [1]
+                        0x20002438    0xc  Data  Gb  FSM_USART_commande.o [1]
+directionRotation       0x20002454    0x2  Data  Lc  FSM_USART_commande.o [1]
+directionRotationChar   0x20002444    0xc  Data  Gb  FSM_USART_commande.o [1]
+distanceCible           0x200025e0   0x10  Data  Lc  controleDistanceCapRobot.o [1]
+distanceDeplacement     0x20002458    0x8  Data  Lc  FSM_USART_commande.o [1]
 distanceDeplacementChar
-                        0x200023ec    0xc  Data  Gb  FSM_USART_commande.o [1]
-dmul                    0x08002511   0x7c  Code  Lc  strto64.o [4]
+                        0x2000242c    0xc  Data  Gb  FSM_USART_commande.o [1]
+dmul                    0x08002539   0x7c  Code  Lc  strto64.o [4]
 dutyCycleChannel1       0x20000132    0x2  Data  Gb  controleMoteur.o [1]
 dutyCycleChannel2       0x20000134    0x2  Data  Gb  controleMoteur.o [1]
 dutyCycleChannel3       0x20000136    0x2  Data  Gb  controleMoteur.o [1]
 dutyCycleChannel4       0x20000138    0x2  Data  Gb  controleMoteur.o [1]
-envoyerOctets           0x0800080d   0x36  Code  Gb  main.o [1]
-etatFSM                 0x200025a4    0x4  Data  Gb  FSM_USART_codePays.o [1]
-etatFSMCommande         0x20002410    0x2  Data  Gb  FSM_USART_commande.o [1]
-exit                    0x08003267    0x4  Code  Gb  exit.o [3]
-frexp                   0x080029d9         Code  Gb  frexp.o [4]
-frexpl                  0x080029d9         Code  Gb  frexp.o [4]
-getAngleRotation        0x08002013    0x8  Code  Gb  FSM_USART_commande.o [1]
+envoyerFinDeplacement   0x08000869    0x8  Code  Gb  main.o [1]
+envoyerOctets           0x08000833   0x36  Code  Gb  main.o [1]
+etatFSM                 0x200025a8    0x4  Data  Gb  FSM_USART_codePays.o [1]
+etatFSMCommande         0x20002450    0x2  Data  Gb  FSM_USART_commande.o [1]
+exit                    0x0800328f    0x4  Code  Gb  exit.o [3]
+frexp                   0x08002a01         Code  Gb  frexp.o [4]
+frexpl                  0x08002a01         Code  Gb  frexp.o [4]
+getAngleRotation        0x0800203b    0x8  Code  Gb  FSM_USART_commande.o [1]
 getConsigneDirectionVitesseAngulaire
-                        0x08001553   0x14  Code  Gb  asservissementVitesseAngulaire.o [1]
+                        0x0800156b   0x14  Code  Gb  asservissementVitesseAngulaire.o [1]
 getConsigneDirectionVitesseLineaire
-                        0x0800188b   0x14  Code  Gb  asservissementVitesseLineaire.o [1]
+                        0x080018b3   0x14  Code  Gb  asservissementVitesseLineaire.o [1]
 getConsigneVitesseAngulaire
-                        0x08001547    0xc  Code  Gb  asservissementVitesseAngulaire.o [1]
+                        0x0800155f    0xc  Code  Gb  asservissementVitesseAngulaire.o [1]
 getDirectionConsigneCap
-                        0x080016c1   0x10  Code  Gb  asservissementCap.o [1]
+                        0x080016ef   0x10  Code  Gb  asservissementCap.o [1]
 getDirectionDeplacement
-                        0x08002005    0x6  Code  Gb  FSM_USART_commande.o [1]
+                        0x0800202d    0x6  Code  Gb  FSM_USART_commande.o [1]
 getDirectionDistanceCible
-                        0x08001763   0x10  Code  Gb  controleDistanceCapRobot.o [1]
-getDirectionMoteur      0x08001411   0x22  Code  Gb  controleMoteur.o [1]
-getDirectionRotation    0x0800201b    0x6  Code  Gb  FSM_USART_commande.o [1]
-getDistanceDeplacement  0x08001ffd    0x8  Code  Gb  FSM_USART_commande.o [1]
-getTypeAsservissement   0x08000909    0x6  Code  Gb  main.o [1]
-getVitesseLineaireMax   0x0800200b    0x8  Code  Gb  FSM_USART_commande.o [1]
-headerCOM               0x20002598    0x4  Data  Gb  FSM_USART_codePays.o [1]
+                        0x0800178f   0x10  Code  Gb  controleDistanceCapRobot.o [1]
+getDirectionMoteur      0x08001429   0x22  Code  Gb  controleMoteur.o [1]
+getDirectionRotation    0x08002043    0x6  Code  Gb  FSM_USART_commande.o [1]
+getDistanceDeplacement  0x08002025    0x8  Code  Gb  FSM_USART_commande.o [1]
+getTypeAsservissement   0x08000927    0x6  Code  Gb  main.o [1]
+getVitesseLineaireMax   0x08002033    0x8  Code  Gb  FSM_USART_commande.o [1]
+headerCOM               0x2000259c    0x4  Data  Gb  FSM_USART_codePays.o [1]
 indexEcritureRX         0x200023d4    0x4  Data  Gb  main.o [1]
 indexEcritureRX_PC      0x200023dc    0x4  Data  Gb  main.o [1]
-indexEcritureTX         0x20002468    0x4  Data  Gb  stm32f4xx_it.o [1]
-indexEcritureTX_PC      0x20002564    0x4  Data  Gb  stm32f4xx_it.o [1]
+indexEcritureTX         0x20002420    0x4  Data  Gb  stm32f4xx_it.o [1]
+indexEcritureTX_PC      0x200024a8    0x4  Data  Gb  stm32f4xx_it.o [1]
 indexLectureRX          0x200023d8    0x4  Data  Gb  main.o [1]
 indexLectureRX_PC       0x200023e0    0x4  Data  Gb  main.o [1]
-indexLectureTX          0x2000246c    0x4  Data  Gb  stm32f4xx_it.o [1]
-indexLectureTX_PC       0x20002568    0x4  Data  Gb  stm32f4xx_it.o [1]
-indiceChecksum          0x200025b0    0x4  Data  Gb  FSM_USART_codePays.o [1]
-indiceCodePays          0x200025ac    0x4  Data  Gb  FSM_USART_codePays.o [1]
-indiceConsigne          0x20002472    0x2  Data  Gb  asservissementCap.o [1]
-indiceHeader            0x200025a8    0x4  Data  Gb  FSM_USART_codePays.o [1]
+indexLectureTX          0x20002424    0x4  Data  Gb  stm32f4xx_it.o [1]
+indexLectureTX_PC       0x200024ac    0x4  Data  Gb  stm32f4xx_it.o [1]
+indiceChecksum          0x200025b4    0x4  Data  Gb  FSM_USART_codePays.o [1]
+indiceCodePays          0x200025b0    0x4  Data  Gb  FSM_USART_codePays.o [1]
+indiceConsigne          0x200024b2    0x2  Data  Gb  asservissementCap.o [1]
+indiceHeader            0x200025ac    0x4  Data  Gb  FSM_USART_codePays.o [1]
 indiceM1                0x20000140    0x2  Data  Gb  stm32f4xx_it.o [1]
 indiceM2                0x20000142    0x2  Data  Gb  stm32f4xx_it.o [1]
-indiceTableau           0x20002430    0x4  Data  Gb  FSM_USART_commande.o [1]
+indiceTableau           0x20002470    0x4  Data  Gb  FSM_USART_commande.o [1]
 initGPIOTimerCLKExterne
-                        0x08001b6d   0x5e  Code  Gb  configTimer.o [1]
-initIOMoteur            0x08001289   0x6a  Code  Gb  controleMoteur.o [1]
-initPICap               0x08001581   0x32  Code  Gb  asservissementCap.o [1]
-initPIVitesseAngulaire  0x08001469   0x30  Code  Gb  asservissementVitesseAngulaire.o [1]
-initPIVitesselineaire   0x08001781   0x44  Code  Gb  asservissementVitesseLineaire.o [1]
-initPWM                 0x080011d1   0xb8  Code  Gb  controleMoteur.o [1]
-initTimerCLKExterne     0x08001ae5   0x80  Code  Gb  configTimer.o [1]
-initTimerInterruptXms   0x08001bdd   0x58  Code  Gb  configTimer.o [1]
-ldexp                   0x08002a49         Code  Gb  ldexp.o [4]
-ldexpl                  0x08002a49         Code  Gb  ldexp.o [4]
-main                    0x08000675  0x190  Code  Gb  main.o [1]
-memchr                  0x08002981         Code  Gb  memchr.o [5]
+                        0x08001b95   0x5e  Code  Gb  configTimer.o [1]
+initIOMoteur            0x080012a1   0x6a  Code  Gb  controleMoteur.o [1]
+initPICap               0x08001599   0x32  Code  Gb  asservissementCap.o [1]
+initPIVitesseAngulaire  0x08001481   0x30  Code  Gb  asservissementVitesseAngulaire.o [1]
+initPIVitesselineaire   0x080017ad   0x44  Code  Gb  asservissementVitesseLineaire.o [1]
+initPWM                 0x080011e9   0xb8  Code  Gb  controleMoteur.o [1]
+initTimerCLKExterne     0x08001b0d   0x80  Code  Gb  configTimer.o [1]
+initTimerInterruptXms   0x08001c05   0x58  Code  Gb  configTimer.o [1]
+ldexp                   0x08002a71         Code  Gb  ldexp.o [4]
+ldexpl                  0x08002a71         Code  Gb  ldexp.o [4]
+main                    0x080006e9  0x14a  Code  Gb  main.o [1]
+memchr                  0x080029a9         Code  Gb  memchr.o [5]
 moteur1                 0x20000100   0x10  Data  Lc  controleMoteur.o [1]
 moteur2                 0x20000110   0x10  Data  Lc  controleMoteur.o [1]
 moteur3                 0x20000120   0x10  Data  Lc  controleMoteur.o [1]
-moteur4                 0x20002618   0x10  Data  Lc  controleMoteur.o [1]
-nbConsigne              0x20002470    0x2  Data  Gb  asservissementCap.o [1]
-ndigs                   0x080024e4   0x28  Data  Lc  iar_Stoulx.o [3]
+moteur4                 0x20002610   0x10  Data  Lc  controleMoteur.o [1]
+nbConsigne              0x200024b0    0x2  Data  Gb  asservissementCap.o [1]
+ndigs                   0x0800250c   0x28  Data  Lc  iar_Stoulx.o [3]
 octetRecuIR             0x20002368    0x1  Data  Gb  main.o [1]
 octetRecuPC             0x20002369    0x1  Data  Gb  main.o [1]
 period                  0x20000130    0x2  Data  Gb  controleMoteur.o [1]
-pows                    0x08002938   0x48  Data  Lc  strto64.o [4]
-prescaler               0x200025d8    0x2  Data  Gb  controleMoteur.o [1]
+pows                    0x08002960   0x48  Data  Lc  strto64.o [4]
+prescaler               0x200025dc    0x2  Data  Gb  controleMoteur.o [1]
 rayonBraquage           0x20001d70    0x8  Data  Gb  stm32f4xx_it.o [1]
-recevoirOctetCMD        0x08001e9d  0x11c  Code  Gb  FSM_USART_commande.o [1]
-recevoirOctetDrapeau    0x08001d89   0xb2  Code  Gb  FSM_USART_codePays.o [1]
-reinitialiserTableau    0x08001e7d   0x18  Code  Gb  FSM_USART_codePays.o [1]
+recevoirDrapeau         0x200023e8    0x4  Data  Gb  main.o [1]
+recevoirOctetCMD        0x08001ec5  0x11c  Code  Gb  FSM_USART_commande.o [1]
+recevoirOctetDrapeau    0x08001db1   0xb2  Code  Gb  FSM_USART_codePays.o [1]
+reinitialiserTableau    0x08001ea5   0x18  Code  Gb  FSM_USART_codePays.o [1]
 reinitialiserTableauCMD
-                        0x08002021   0x26  Code  Gb  FSM_USART_commande.o [1]
-scalbln                 0x08002a49         Code  Gb  ldexp.o [4]
-scalblnl                0x08002a49         Code  Gb  ldexp.o [4]
-scalbn                  0x08002a49         Code  Gb  ldexp.o [4]
-scalbnl                 0x08002a49         Code  Gb  ldexp.o [4]
-setConsigneCap          0x08001665   0x5c  Code  Gb  asservissementCap.o [1]
+                        0x08002049   0x26  Code  Gb  FSM_USART_commande.o [1]
+scalbln                 0x08002a71         Code  Gb  ldexp.o [4]
+scalblnl                0x08002a71         Code  Gb  ldexp.o [4]
+scalbn                  0x08002a71         Code  Gb  ldexp.o [4]
+scalbnl                 0x08002a71         Code  Gb  ldexp.o [4]
+setConsigneCap          0x08001699   0x56  Code  Gb  asservissementCap.o [1]
 setConsigneVitesseAngulaire
-                        0x08001529   0x1e  Code  Gb  asservissementVitesseAngulaire.o [1]
+                        0x08001541   0x1e  Code  Gb  asservissementVitesseAngulaire.o [1]
 setConsigneVitesseLineaire
-                        0x0800182d   0x5e  Code  Gb  asservissementVitesseLineaire.o [1]
-setDistanceCible        0x08001745   0x1e  Code  Gb  controleDistanceCapRobot.o [1]
-setTypeAsservissement   0x0800090f    0x6  Code  Gb  main.o [1]
-stockerDonneeRecu       0x08001fc1   0x3c  Code  Gb  FSM_USART_commande.o [1]
-strcmp                  0x0800234d         Code  Gb  strcmp.o [5]
-structGPIO              0x20002628    0x8  Data  Gb  controleMoteur.o [1]
-structPWMtim            0x200025b8   0x14  Data  Gb  controleMoteur.o [1]
-structTimer1            0x200025cc    0xc  Data  Gb  controleMoteur.o [1]
+                        0x08001859   0x5a  Code  Gb  asservissementVitesseLineaire.o [1]
+setDistanceCible        0x08001771   0x1e  Code  Gb  controleDistanceCapRobot.o [1]
+setTypeAsservissement   0x0800092d    0x6  Code  Gb  main.o [1]
+stockerDonneeRecu       0x08001fe9   0x3c  Code  Gb  FSM_USART_commande.o [1]
+strcmp                  0x08002375         Code  Gb  strcmp.o [5]
+structGPIO              0x2000262c    0x8  Data  Gb  controleMoteur.o [1]
+structPWMtim            0x200025bc   0x14  Data  Gb  controleMoteur.o [1]
+structTimer1            0x200025d0    0xc  Data  Gb  controleMoteur.o [1]
 tableauActionPI         0x20000000   0x40  Data  Lc  asservissementVitesseAngulaire.o [1]
-tableauActionPICap      0x20002478   0x10  Data  Lc  asservissementCap.o [1]
+tableauActionPICap      0x200024b8   0x10  Data  Lc  asservissementCap.o [1]
 tableauActionPIVL       0x20000080   0x20  Data  Lc  asservissementVitesseLineaire.o [1]
-tableauConsignePI       0x200024f0   0x40  Data  Lc  asservissementVitesseAngulaire.o [1]
-tableauConsignePICap    0x20002498   0x10  Data  Lc  asservissementCap.o [1]
+tableauConsignePI       0x20002530   0x40  Data  Lc  asservissementVitesseAngulaire.o [1]
+tableauConsignePICap    0x200024d8   0x10  Data  Lc  asservissementCap.o [1]
 tableauConsignePIVL     0x200000c0   0x20  Data  Lc  asservissementVitesseLineaire.o [1]
 tableauConsigneProgressive
                         0x20001dc8  0x5a0  Data  Lc  asservissementCap.o [1]
-tableauErreurPI         0x200024b0   0x40  Data  Lc  asservissementVitesseAngulaire.o [1]
-tableauErreurPICap      0x20002488   0x10  Data  Lc  asservissementCap.o [1]
+tableauErreurPI         0x200024f0   0x40  Data  Lc  asservissementVitesseAngulaire.o [1]
+tableauErreurPICap      0x200024c8   0x10  Data  Lc  asservissementCap.o [1]
 tableauErreurPIVL       0x200000a0   0x20  Data  Lc  asservissementVitesseLineaire.o [1]
 tableauParametrePIDiscret
                         0x20000040   0x40  Data  Lc  asservissementVitesseAngulaire.o [1]
@@ -653,22 +656,22 @@ tableauParametrePIDiscretVL
                         0x200000e0   0x20  Data  Lc  asservissementVitesseLineaire.o [1]
 tableauVitesseM1        0x20000148  0x960  Data  Gb  stm32f4xx_it.o [1]
 tableauVitesseM2        0x20000aa8  0x960  Data  Gb  stm32f4xx_it.o [1]
-typeAsservissement      0x20002634    0x4  Data  Lc  main.o [1]
-vitesseLineaireMax      0x20002420    0x8  Data  Lc  FSM_USART_commande.o [1]
-vitesseLineaireMaxChar  0x20002600    0xc  Data  Gb  FSM_USART_commande.o [1]
-vitesseMax              0x200025f8    0x8  Data  Lc  controleDistanceCapRobot.o [1]
+typeAsservissement      0x20002640    0x4  Data  Lc  main.o [1]
+vitesseLineaireMax      0x20002460    0x8  Data  Lc  FSM_USART_commande.o [1]
+vitesseLineaireMaxChar  0x200025f8    0xc  Data  Gb  FSM_USART_commande.o [1]
+vitesseMax              0x200025f0    0x8  Data  Lc  controleDistanceCapRobot.o [1]
 
 
-[1] = D:\Fichier Mathieu\Session 5\SMI\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj
+[1] = D:\Fichier Mathieu\Session 6\Design 3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\TIM_TimeBase\Obj
 [2] = command line
 [3] = dl7M_tln.a
 [4] = m7M_tl.a
 [5] = rt7M_tl.a
 [6] = shb_l.a
 
-  13 300 bytes of readonly  code memory
+  13 340 bytes of readonly  code memory
      307 bytes of readonly  data memory
-  10 816 bytes of readwrite data memory
+  10 820 bytes of readwrite data memory
 
 Errors: none
 Warnings: none

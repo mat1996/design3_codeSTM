@@ -1,16 +1,16 @@
-"D:\Fichier Mathieu\Session 6\Design 3\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\main.c"
+"D:\Fichier Mathieu\Session 6\Design 3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\main.c"
 -std=c11
 -ferror-limit=0
 -I
-D:\Fichier Mathieu\Session 6\Design 3\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\..
+D:\Fichier Mathieu\Session 6\Design 3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\..
 -I
-D:\Fichier Mathieu\Session 6\Design 3\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\..\..\..\..\Libraries\CMSIS\Include
+D:\Fichier Mathieu\Session 6\Design 3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\..\..\..\..\Libraries\CMSIS\Include
 -I
-D:\Fichier Mathieu\Session 6\Design 3\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include
+D:\Fichier Mathieu\Session 6\Design 3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\..\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include
 -I
-D:\Fichier Mathieu\Session 6\Design 3\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc
+D:\Fichier Mathieu\Session 6\Design 3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\..\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc
 -I
-D:\Fichier Mathieu\Session 6\Design 3\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\..\..\..\..\Utilities\STM32F4-Discovery
+D:\Fichier Mathieu\Session 6\Design 3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase\EWARM\..\..\..\..\Utilities\STM32F4-Discovery
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\CMSIS\Include
 -I
@@ -18,15 +18,15 @@ C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\inc\c
 -I
-D:\Fichier Mathieu\Session 6\Design 3\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase
+D:\Fichier Mathieu\Session 6\Design 3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Project\Peripheral_Examples\TIM_TimeBase
 -I
-D:\Fichier Mathieu\Session 6\Design 3\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\Include
+D:\Fichier Mathieu\Session 6\Design 3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\Include
 -I
-D:\Fichier Mathieu\Session 6\Design 3\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\ST\STM32F4xx\Include
+D:\Fichier Mathieu\Session 6\Design 3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\ST\STM32F4xx\Include
 -I
-D:\Fichier Mathieu\Session 6\Design 3\STM32F4-Discovery_FW_V1.1.0\Libraries\STM32F4xx_StdPeriph_Driver\inc
+D:\Fichier Mathieu\Session 6\Design 3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Libraries\STM32F4xx_StdPeriph_Driver\inc
 -I
-D:\Fichier Mathieu\Session 6\Design 3\STM32F4-Discovery_FW_V1.1.0\Utilities\STM32F4-Discovery
+D:\Fichier Mathieu\Session 6\Design 3\design3_codeSTM\STM32F4-Discovery_FW_V1.1.0\Utilities\STM32F4-Discovery
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\CMSIS\Include
 -D__CHAR_BITS__=8

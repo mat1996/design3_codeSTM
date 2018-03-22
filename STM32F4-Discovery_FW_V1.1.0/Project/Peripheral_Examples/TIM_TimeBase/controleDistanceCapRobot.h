@@ -4,7 +4,7 @@
 #include "stm32f4xx_gpio.h"
 
 #define Kdistance               2
-#define DISTANCE_CRITIQUE       0.02 // en m
+#define DISTANCE_CRITIQUE       0.01 // en m
 #define VMAX                    0.15
 #define VROTATION               0.05
 

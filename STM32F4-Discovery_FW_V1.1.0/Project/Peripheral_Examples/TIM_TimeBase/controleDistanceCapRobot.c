@@ -1,15 +1,18 @@
 #include "controleDistanceCapRobot.h"
+#include "asservissementVitesseLineaire.h"
+#include "asservissementVitesseAngulaire.h"
 #include "main.h"
 
 static double distanceCible[2];
 static double vitesseMax;
+
 
 double calculerConsigneVitesseLineaire(double distanceParcouru)
 {
   distanceCible[0] -= distanceParcouru;
   if(distanceCible[0] < (double)(DISTANCE_CRITIQUE))
   {
-    setTypeAsservissement(0);
+    setTypeAsservissement(3);
     return 0.0;
   }else
   {
@@ -24,6 +27,8 @@ void setDistanceCible(double distance, uint16_t direction, double vitesse)
   distanceCible[0] = distance;
   distanceCible[1] = (double)(direction);
   vitesseMax = vitesse;
+  //initPIVitesselineaire();
+  //initPIVitesseAngulaire();
 }
 
 double getDistanceCible(void)

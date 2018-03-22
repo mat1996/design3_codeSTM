@@ -1,4 +1,5 @@
 #include "asservissementVitesseLineaire.h"
+#include "controleMoteur.h"
 
 static double tableauParametrePIDiscretVL[NB_GROUPE][NB_PARAM] = {{10.04, -8.57}, {10.33 -8.77}};
 

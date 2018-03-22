@@ -77,6 +77,7 @@ extern __IO uint32_t indexLectureTX_PC;
 
 int codePaysRecu = 0;
 char octetRecuIR, octetRecuPC;
+int recevoirDrapeau = 0;
 
 //char *codePays;
 
@@ -300,8 +301,17 @@ int main(void)
   while (1)
   {
     
+    //Voir pourquoi le robot n'exécute pas des commandes?
+    //déplacement trop petit?
+    //rotation trop petite?
+    //manque des commande autant pour les rotations/déplacement
+    //reste pris dans l'asservissement du déplacement à l'infini!! pourquoi??
+    //teste l'envoie de commandes successives, voir ce qu'on recoit
+    //revoir les fichiers asservissementCap, asservissementVitesselineaire, asservissementVitesseAngulaire, controleDistanceCap
+    //
+    
     //récupération du code du pays
-    if(indexLectureRX != indexEcritureRX)
+    if(indexLectureRX != indexEcritureRX && recevoirDrapeau == 1)
     {
       octetRecuIR = bufferRx[indexLectureRX];
       indexLectureRX++;
@@ -316,6 +326,7 @@ int main(void)
         envoiCodePays[1] = (uint8_t)(codePaysRecu);
         envoiCodePays[2] = (uint8_t)(256 - ('1' + (uint8_t)(codePaysRecu)));
         envoyerOctets(envoiCodePays, 3);
+        recevoirDrapeau = 0;
       }
       //faire ce que l'on veut avec l'octet, envoyer sur TX?
     }
@@ -334,17 +345,16 @@ int main(void)
         //commande de déplacement
         GPIO_ToggleBits(GPIOD, GPIO_Pin_13);
         appliquerConsigneDeplacement();
-        envoyerFinDeplacement();
       }else if(retour == 2)
       {
         //commande de rotation
         GPIO_ToggleBits(GPIOD,GPIO_Pin_14);
         appliquerConsigneRotation();
-        envoyerFinRotation();
       }else if(retour == 3)
       {
         //commande de demande du drapeau
         GPIO_ToggleBits(GPIOD, GPIO_Pin_15);
+        recevoirDrapeau = 1;
       }
      
       //rien faire
@@ -400,6 +410,9 @@ void envoyerFinRotation()
 
 void appliquerConsigneDeplacement(void)
 {
+  initPIVitesseAngulaire();
+  initPIVitesselineaire();
+  initPICap();
   setDistanceCible(getDistanceDeplacement(), getDirectionDeplacement(), getVitesseLineaireMax());
   typeAsservissement = 2;
   
@@ -413,21 +426,18 @@ void appliquerConsigneDeplacement(void)
   TIM_Cmd(TIM5, ENABLE);
   
   //faire de l'attente active pour attendre la fin du déplacement (changer pour attente active)
-  Delay(10000);
-  //while(typeAsservissement != 0){};
+
   
   //activer les timer des encodeurs
-  TIM_Cmd(TIM1, DISABLE);
-  TIM_Cmd(TIM2, DISABLE);
-  TIM_Cmd(TIM3, DISABLE);
-  TIM_Cmd(TIM4, DISABLE);
   
   //activer le timer des interrupt
-  TIM_Cmd(TIM5, DISABLE);
 }
 
 void appliquerConsigneRotation(void)
 {
+  initPIVitesseAngulaire();
+  initPIVitesselineaire();
+  initPICap();
   setConsigneCap(getAngleRotation(), getDirectionRotation());
   typeAsservissement = 1;
   
@@ -441,17 +451,13 @@ void appliquerConsigneRotation(void)
   TIM_Cmd(TIM5, ENABLE);  
   
   //faire de l'attente active pour attendre la fin du déplacement (changer pour attente active)
-  Delay(10000);
   //while(typeAsservissement != 0){};
   
   //activer les timer des encodeurs
-  TIM_Cmd(TIM1, DISABLE);
-  TIM_Cmd(TIM2, DISABLE);
-  TIM_Cmd(TIM3, DISABLE);
-  TIM_Cmd(TIM4, DISABLE);
+
   
   //activer le timer des interrupt
-  TIM_Cmd(TIM5, DISABLE);
+  
   
 }
 
