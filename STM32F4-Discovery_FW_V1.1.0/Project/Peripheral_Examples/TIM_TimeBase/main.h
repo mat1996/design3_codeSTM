@@ -1,7 +1,7 @@
 #ifndef __MAIN_H
 #define __MAIN_H
 
-
+#define TAILLE_BUFFER           50
 
 void TimingDelay_Decrement(void);
 int getTypeAsservissement(void);
@@ -13,5 +13,7 @@ void appliquerConsigneDeplacement(void);
 void appliquerConsigneRotation(void);
 void envoyerFinDeplacement(void);
 void envoyerFinRotation(void);
+
+
 
 #endif 

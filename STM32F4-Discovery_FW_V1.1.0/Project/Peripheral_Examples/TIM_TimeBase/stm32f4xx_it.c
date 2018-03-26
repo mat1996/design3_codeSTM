@@ -68,17 +68,17 @@ double rayonBraquage = 0.0525;
 double angleRobot = 0;
 
 
-extern __IO char bufferRx[50];
+extern __IO char bufferRx[TAILLE_BUFFER];
 extern __IO uint32_t indexEcritureRX;
 extern __IO uint32_t indexLectureRX;
-__IO char bufferTX[50];
+__IO char bufferTX[TAILLE_BUFFER];
 __IO uint32_t indexEcritureTX = 0;
 __IO uint32_t indexLectureTX = 0;
 
-extern __IO char bufferRx_PC[50];
+extern __IO char bufferRx_PC[TAILLE_BUFFER];
 extern __IO uint32_t indexEcritureRX_PC;
 extern __IO uint32_t indexLectureRX_PC;
-__IO char bufferTX_PC[50];
+__IO char bufferTX_PC[TAILLE_BUFFER];
 __IO uint32_t indexEcritureTX_PC = 0;
 __IO uint32_t indexLectureTX_PC = 0;
 
@@ -343,6 +343,9 @@ void TIM5_IRQHandler(void)
         TIM_SetCounter(TIM2, 0);
         TIM_SetCounter(TIM3, 0);
         TIM_SetCounter(TIM4, 0);
+        
+        tableauVitesseM1[indiceM1] = actionVitesseM24;
+        //      tableaVitesseM2[indiceM2] = 
       }else if(typeAsservissement == 3)
       {
           TIM_Cmd(TIM1, DISABLE);

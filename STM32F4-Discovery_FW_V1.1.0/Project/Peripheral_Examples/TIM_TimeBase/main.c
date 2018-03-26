@@ -62,16 +62,16 @@ uint16_t prescalerTimer3 = 0;
 //USART2 (COM IR)
 __IO uint32_t indexEcritureRX = 0;
 __IO uint32_t indexLectureRX = 0;
-__IO char bufferRx[50];
-extern __IO char bufferTX[50];
+__IO char bufferRx[TAILLE_BUFFER];
+extern __IO char bufferTX[TAILLE_BUFFER];
 extern __IO uint32_t indexEcritureTX;
 extern __IO uint32_t indexLectureTX;
 
 //USART3 (COM mini-PC)
 __IO uint32_t indexEcritureRX_PC = 0;
 __IO uint32_t indexLectureRX_PC = 0;
-__IO char bufferRx_PC[50];
-extern __IO char bufferTX_PC[50];
+__IO char bufferRx_PC[TAILLE_BUFFER];
+extern __IO char bufferTX_PC[TAILLE_BUFFER];
 extern __IO uint32_t indexEcritureTX_PC;
 extern __IO uint32_t indexLectureTX_PC;
 
@@ -315,7 +315,7 @@ int main(void)
     {
       octetRecuIR = bufferRx[indexLectureRX];
       indexLectureRX++;
-      if(indexLectureRX > sizeof(bufferRx))
+      if(indexLectureRX > (TAILLE_BUFFER - 1))
         indexLectureRX = 0;
       int valeurOut = recevoirOctetDrapeau(octetRecuIR);
       if(valeurOut != 0)
@@ -336,7 +336,7 @@ int main(void)
     {
       octetRecuPC = bufferRx_PC[indexLectureRX_PC];
       indexLectureRX_PC++;
-      if(indexLectureRX_PC > sizeof(bufferRx_PC))
+      if(indexLectureRX_PC > (TAILLE_BUFFER -1))
         indexLectureRX_PC = 0;
       int retour = recevoirOctetCMD(octetRecuPC);
       

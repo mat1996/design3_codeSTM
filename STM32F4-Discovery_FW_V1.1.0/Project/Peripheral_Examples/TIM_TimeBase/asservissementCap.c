@@ -50,7 +50,16 @@ double calculerActionCap(double angleCalcule)
   tableauActionPICap[1] = tableauActionPICap[0];
   tableauActionPICap[0] = tableauActionPICap[1] + tableauParametrePIDiscretCap[0]*tableauErreurPICap[0]
                                               + tableauParametrePIDiscretCap[1]*tableauErreurPICap[1];
-  if(tableauActionPICap[0] < 0 || (tableauConsignePICap[0] - angleDeplacement) < ANGLE_CRITIQUE)
+  if(tableauActionPICap[0] < 0 )
+  {
+    actionCap = 0;
+    
+  }else
+  {
+    actionCap = tableauActionPICap[0];
+  }
+  
+  if((tableauConsignePICap[0] - angleDeplacement) < ANGLE_CRITIQUE)
   {
     actionCap = 0;
     arreterMoteur(1);
@@ -59,10 +68,6 @@ double calculerActionCap(double angleCalcule)
     arreterMoteur(4);
     //initPIVitesseAngulaire();
     setTypeAsservissement(3);
-    
-  }else
-  {
-    actionCap = tableauActionPICap[0];
   }
   
   if(indiceConsigne < nbConsigne)

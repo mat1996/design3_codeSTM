@@ -19,6 +19,7 @@ static double angleRotation = 0.0;
 static uint16_t directionRotation = 0;
 
 int indiceTableau = 0;
+int retour = 0;
 
 //0 => attente
 //1 => recevoir commande move
@@ -34,7 +35,7 @@ int recevoirOctetCMD(char octetRecu)
   switch(etatFSMCommande)
   {
   case 0 :
-    indiceTableau = 0;
+    //indiceTableau = 0;
     reinitialiserTableauCMD();
     if(octetRecu == 'M')
     {
@@ -57,7 +58,8 @@ int recevoirOctetCMD(char octetRecu)
       commande = '\0';
       etatFSMCommande = 0;
     }
-    return 0;
+    retour = 0;
+    break;
     
     
   case 1 :
@@ -68,7 +70,8 @@ int recevoirOctetCMD(char octetRecu)
     {
       etatFSMCommande = 0;
     }
-    return 0;
+    retour = 0;
+    break;
     
   case 2 :
     if(octetRecu == '*')
@@ -78,17 +81,19 @@ int recevoirOctetCMD(char octetRecu)
     {
       etatFSMCommande = 0;
     }
-    return 0;
+    retour = 0;
+    break;
     
   case 3 :
     etatFSMCommande = 0;
     if(octetRecu == '*')
     {
-      return 3;
+      retour = 3;
     }else
     {
-      return 0;
+      retour = 0;
     }
+    break;
     
   case 4 :
     //recevoir la distance du déplacement
@@ -98,12 +103,14 @@ int recevoirOctetCMD(char octetRecu)
       indiceTableau++;
       if(indiceTableau > TAILLE_MAX_PAYLOAD)
         etatFSMCommande = 0;
+      retour = 0;
     }else
     {
       indiceTableau = 0;
       etatFSMCommande = 5;
+      retour = 0;
     }
-    return 0;
+    break;
     
   case 5:
     //recevoir la direction du déplacement
@@ -113,12 +120,14 @@ int recevoirOctetCMD(char octetRecu)
       indiceTableau++;
       if(indiceTableau > TAILLE_MAX_PAYLOAD)
         etatFSMCommande = 0;
+      retour = 0;
     }else
     {
       indiceTableau = 0;
       etatFSMCommande = 6;
+      retour = 0;
     }
-    return 0;
+    break;
     
   case 6 :
     //recevoir la vitesse linéaire max
@@ -128,20 +137,20 @@ int recevoirOctetCMD(char octetRecu)
       indiceTableau++;
       if(indiceTableau > TAILLE_MAX_PAYLOAD)
         etatFSMCommande = 0;
-      
-      return 0;
+      retour = 0;
     }else
     {
       indiceTableau = 0;
       etatFSMCommande = 0;
       stockerDonneeRecu();
       if(commande == 'M')
-        return 1;
+        retour = 1;
       else if(commande == 'R')
-        return 2;
+        retour = 2;
       else if(commande == 'D')
-        return 3;
+        retour = 3;
     }
+    break;
     
   case 7 :
     //recevoir l'angle
@@ -151,12 +160,14 @@ int recevoirOctetCMD(char octetRecu)
       indiceTableau++;
       if(indiceTableau > TAILLE_MAX_PAYLOAD)
         etatFSMCommande = 0;
+      retour = 0;
     }else
     {
       indiceTableau = 0;
       etatFSMCommande = 8;
+      retour = 0;
     }
-    return 0;
+    break;
     
   case 8 :
     //recevoir la direction
@@ -166,28 +177,33 @@ int recevoirOctetCMD(char octetRecu)
       indiceTableau++;
       if(indiceTableau > TAILLE_MAX_PAYLOAD)
         etatFSMCommande = 0;
+      retour = 0;
     }else
     {
       indiceTableau = 0;
       etatFSMCommande = 0;
       stockerDonneeRecu();
       if(commande == 'M')
-        return 1;
+        retour = 1;
       else if(commande == 'R')
-        return 2;
+        retour = 2;
       else if(commande == 'D')
-        return 3;
+        retour = 3;
     }
-    return 0;
+    break;
+    
     
     
     
     
   default : 
     etatFSMCommande = 0;
-    return 0; 
+    retour = 0; 
+    break;
     
   }
+
+  return retour;
 }
 
 
